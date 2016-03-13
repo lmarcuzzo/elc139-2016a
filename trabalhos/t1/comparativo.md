@@ -3,12 +3,13 @@
 TOP500 & me: Comparativo de Arquiteturas Paralelas
 --------------------------------------------------
 
-Nome: < preencha seu nome aqui >
+Nome: Leonardo Marcuzzo
+Matrícula: 201130409
 
 | Característica                                            | Computador no TOP500  | Meu computador  |
 | --------------------------------------------------------- | --------------------- | --------------- |
-| Nome/Título                                               |                       |                 |
-| Imagem (foto, diagrama, screenshot, etc.)                 | Substitua-me. ![](http://www.top500.org/static//images/Top500_logo.png) | |
+| Nome/Título                                               | Santos Dumont GPU		| Dell Vostro 1320|
+| Imagem (foto, diagrama, screenshot, etc.)                 | ![](http://cienciahoje.uol.com.br/noticias/2015/09/imagens/Supercomputadortupiniqum02.jpeg) | ![](http://i1-news.softpedia-static.com/images/news2/Dell-Debuts-the-Spring-2009-Vostro-Laptops-Lineup-5.jpg)|
 | Classificação de Flynn                                    |                       |                 |
 | Memória: compartilhada, distribuída ou ambas?             |                       |                 |
 | Número total de núcleos de processamento                  |                       |                 |
