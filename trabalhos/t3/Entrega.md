@@ -1,5 +1,5 @@
-Nome: Leonardo Marcuzzo\
-Matrícula: 201130409\
+Nome: Leonardo Marcuzzo
+Matrícula: 201130409
 E-mail: lmarcuzzo@inf.ufsm.br
 
 ## Questões Pthreads
@@ -58,3 +58,14 @@ No caso do meu notebook, que possui dois cores, a resposta é não, como se pode
 **5. Explique as diferenças entre [pthreads_dotprod.c](pthreads_dotprod/pthreads_dotprod.c) e [pthreads_dotprod2.c](pthreads_dotprod/pthreads_dotprod2.c). Com as linhas removidas, o programa está correto?**
 
 Não, as linhas removidas servem para dar lock na variável e garantir que apenas uma thread esteja usando a variável no momento. Sem isso, é possível que outra thread use a variável enquanto ela já esta sendo usada, o que pode ocasionar erros.
+
+============================================================================================================================================================================
+**1. Implemente um programa equivalente a [pthreads_dotprod.c](pthreads_dotprod/pthreads_dotprod.c) usando OpenMP.** 
+
+A implementação está em [dotprod_openmp.c](openmp/dotprod_openmp.c)
+
+2. Avalie o desempenho do programa em OpenMP, usando os mesmos dados/argumentos do programa com threads POSIX.
+
+![](grafico2.png)
+
+O desempenho do programa em OpenMP é parecido com o desempenho da implementação com pthreads.
