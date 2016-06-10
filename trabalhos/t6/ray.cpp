@@ -148,8 +148,8 @@ int main(int argc, char *argv[]) {
           }
         }
       //Salva output em vetor de char com tamanho n
-      //output[cont] = char(int(.5 + 255. * g / (ss*ss)));
-      cout << char(int(.5 + 255. * g / (ss*ss)));
+      output[cont] = char(int(.5 + 255. * g / (ss*ss)));
+      //cout << char(int(.5 + 255. * g / (ss*ss)));
       cont++;
       //printf("%d\n",output[cont]);
     }
