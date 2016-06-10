@@ -3,6 +3,8 @@
 #include <cmath>       // see http://ompf.org/ray/sphereflake/
 #include <iostream>    // compile with ie g++ -O2 -ffast-math sphereflake.cc
 #include <cstdlib>
+#include "mpi.h"
+
 #define GIMME_SHADOWS  // usage: ./sphereflake [lvl=6] >pix.ppm
 
 enum { childs = 9, ss= 2, ss_sqr = ss*ss }; /* not really tweakable anymore */
