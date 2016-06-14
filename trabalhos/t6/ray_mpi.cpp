@@ -1,7 +1,9 @@
 #include <list>
 #include <iostream>
+#include <fstream>
 #include <limits>
 #include <cmath>
+#include <vector>
 
 #include "mpi.h"
 
@@ -12,8 +14,7 @@ double delta = sqrt(real.epsilon()), infinity = real.infinity();
 
 struct Vec {
   double x, y, z;
-  Vec(double x2, double y2, double z2) : x(x2), y(y2), z(z2) {}
-};
+  Vec(double x2, double y2, double z2) : x(x2), y(y2), z(z2) {}};
 Vec operator+(const Vec &a, const Vec &b)
 { return Vec(a.x+b.x, a.y+b.y, a.z+b.z); }
 Vec operator-(const Vec &a, const Vec &b)
@@ -26,13 +27,11 @@ typedef pair<double, Vec> Hit;
 
 struct Ray {
   Vec orig, dir;
-  Ray(const Vec &o, const Vec &d) : orig(o), dir(d) {}
-};
+  Ray(const Vec &o, const Vec &d) : orig(o), dir(d) {}};
 
 struct Scene {
   virtual ~Scene() {};
-  virtual Hit intersect(const Hit &, const Ray &) const = 0;
-};
+  virtual Hit intersect(const Hit &, const Ray &) const = 0;};
 
 struct Sphere : public Scene {
   Vec center;
@@ -55,8 +54,7 @@ struct Sphere : public Scene {
     double lambda = ray_sphere(ray);
     if (lambda >= hit.first) return hit;
     return Hit(lambda, unitise(ray.orig + lambda*ray.dir - center));
-  }
-};
+  }};
 
 typedef list<Scene *> Scenes;
 struct Group : public Scene {
@@ -76,11 +74,10 @@ struct Group : public Scene {
     for (Scenes::const_iterator it=child.begin(); it!=child.end(); ++it)
       hit2 = (*it)->intersect(hit2, ray);
     return hit2;
-  }
-};
+  }};
 
 Hit intersect(const Ray &ray, const Scene &s)
-{ return s.intersect(Hit(infinity, Vec(0, 0, 0)), ray); }
+{return s.intersect(Hit(infinity, Vec(0, 0, 0)), ray);}
 
 double ray_trace(const Vec &light, const Ray &ray, const Scene &s) {
   Hit hit = intersect(ray, s);
@@ -88,8 +85,7 @@ double ray_trace(const Vec &light, const Ray &ray, const Scene &s) {
   double g = dot(hit.second, light);
   if (g >= 0) return 0.;
   Vec p = ray.orig + hit.first*ray.dir + delta*hit.second;
-  return (intersect(Ray(p, -1. * light), s).first < infinity ? 0 : -g);
-}
+  return (intersect(Ray(p, -1. * light), s).first < infinity ? 0 : -g);}
 
 Scene *create(int level, const Vec &c, double r) {
   Scene *s = new Sphere(c, r);
@@ -100,17 +96,22 @@ Scene *create(int level, const Vec &c, double r) {
   for (int dz=-1; dz<=1; dz+=2)
     for (int dx=-1; dx<=1; dx+=2)
       child.push_back(create(level-1, c + rn*Vec(dx, 1, dz), r/2));
-  return new Group(Sphere(c, 3*r), child);
-}
+  return new Group(Sphere(c, 3*r), child);}
 
+/*
+ * Tempo (wallclock) em microssegundos
+ */ 
+
+//Main
 int main(int argc, char *argv[]) {
-  //Config do programa
   int level = 6, n = 512, ss = 4;
   if (argc == 2) level = atoi(argv[1]);
-  
+  Vec light = unitise(Vec(-1, -3, 2));
+  Scene *s(create(level, Vec(0, -1, 0), 1));
+
   //MPI
   int rank;//Rank
-  int p;//Processos
+  int pID;//Processos
   int origem;
   int dest;
   MPI_Status status;
@@ -118,49 +119,55 @@ int main(int argc, char *argv[]) {
   //Init
   MPI_Init(&argc, &argv);
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-  MPI_Comm_size(MPI_COMM_WORLD, &p);
+  MPI_Comm_size(MPI_COMM_WORLD, &pID);
 
+  int chunk = n / (pID-1);
 
   //Master
   if(rank == 0){
-    printf("Master\n");
-    int receive[n*n];
-    MPI_Recv(receive, n*n, MPI_INT, MPI_ANY_SOURCE,0, MPI_COMM_WORLD,&status);
-    for(int i = 0 ; i < n*n ; i++){
-      cout << receive[i];
+    printf("Size = %d\n",pID);
+    int receive[(n*n)/(pID-1)];
+    vector<int> v;
+    ofstream file;
+    file.open("test.ppm");
+    file << "P5\n" << n << " " << n << "\n255\n";
+    for(origem = pID-1 ; origem > 0 ; origem--){
+      cout << "Recebido de processo" << origem << "\n";
+      MPI_Recv(receive, (n*n)/(pID-1), MPI_INT, origem,0, MPI_COMM_WORLD,&status);
+      //Copia conteudo recebido para vector
+      for(int i=0 ; i < (n*n)/(pID-1);i++){
+        v.push_back(receive[i]);
+      }
     }
-
+    //Salva vector no arquivo
+    for(int i = 0; i < n*n; i++){
+      file << char(v[i]);
+    }
+    file.close();
   }
-  //Se proc nao for o master é um worker
-
+  //Parte que os workers irao executar
   else{
-    //printf("Processo %d\n",rank);
+
     int output[n*n];
     int cont = 0;
-    Vec light = unitise(Vec(-2, -2, 2));
-    Scene *s(create(level, Vec(0, -1, 0), 1));
-    int y = 0;
-    for (int y=n-1; y>=0; --y){
+
+    printf("%d\n",rank);
+
+    for (int y=n; y>=0; --y)
       for (int x=0; x<n; ++x) {
         double g=0;
-        for (int dx=0; dx<ss; ++dx){
+        for (int dx=0; dx<ss; ++dx)
           for (int dy=0; dy<ss; ++dy) {
             Vec dir(unitise(Vec(x+dx*1./ss-n/2., y+dy*1./ss-n/2., n)));
             g += ray_trace(light, Ray(Vec(0, 0, -4), dir), *s);
           }
-        }
-      //Salva output em vetor de char com tamanho n
-      output[cont] = int(.5 + 255. * g / (ss*ss));
-      //cout << char(int(.5 + 255. * g / (ss*ss)));
-      cont++;
-      //printf("%d\n",output[cont]);
+        output[cont] = int(.5 + 255. * g / (ss*ss));
+        cont++;
+      }
+      printf("%d\n",cont );
+      delete s;
+      MPI_Send(output, (n*n)/(pID-1), MPI_INT, 0, 0, MPI_COMM_WORLD);
     }
+    MPI_Finalize();
+    return 0;
   }
-  delete s;
-  //Envia para o master
-  //(data, size, tipo, dest, tag, MPI_COMM_WORLD)
-  MPI_Send(output, n*n, MPI_INT, 0, 0, MPI_COMM_WORLD);
-}
-  MPI_Finalize();
-  return 0;
-}
