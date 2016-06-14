@@ -98,16 +98,14 @@ Scene *create(int level, const Vec &c, double r) {
       child.push_back(create(level-1, c + rn*Vec(dx, 1, dz), r/2));
   return new Group(Sphere(c, 3*r), child);}
 
-/*
- * Tempo (wallclock) em microssegundos
- */ 
-
 //Main
 int main(int argc, char *argv[]) {
-  int level = 6, n = 256, ss = 4;
+  int level = 6, n = 512, ss = 4;
   if (argc == 2) level = atoi(argv[1]);
   Vec light = unitise(Vec(-1, -3, 2));
   Scene *s(create(level, Vec(0, -1, 0), 1));
+
+  clock_t start_time, end_time;
 
   //MPI
   int rank;//Rank
@@ -121,8 +119,6 @@ int main(int argc, char *argv[]) {
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
   MPI_Comm_size(MPI_COMM_WORLD, &pID);
 
-  
-
   //Master
   if(rank == 0){
     int receive[(n*n)/(pID-1)];
@@ -130,7 +126,9 @@ int main(int argc, char *argv[]) {
     ofstream file;
     file.open("test.ppm");
     file << "P5\n" << n << " " << n << "\n255\n";
-    for(origem = 1 ; origem < pID ; origem++){
+
+    start_time = clock();
+    for(origem = pID - 1 ; origem > 0 ; origem--){
       //cout << "Recebido de processo" << origem << "\n";
       MPI_Recv(receive, (n*n)/(pID-1), MPI_INT, origem,0, MPI_COMM_WORLD,&status);
       //Copia conteudo recebido para vector
@@ -138,6 +136,10 @@ int main(int argc, char *argv[]) {
         v.push_back(receive[i]);
       }
     }
+    end_time = clock() - start_time;
+
+    cout << end_time / (CLOCKS_PER_SEC/1000);
+
     //Salva vector no arquivo
     for(int i = 0; i < n*n; i++){
       file << char(v[i]);
@@ -155,12 +157,11 @@ int main(int argc, char *argv[]) {
       local_init = 0;
       local_end = local_work;
     }
+    //Demais workers
     else{
       local_init = (local_work * rank) - local_work;
       local_end = local_init + local_work;
     }
-
-    //printf("local_work %d local_init %d local_end %d\n",local_work,local_init,local_end );
 
     int output[(n*n)/(pID-1)];
     int cont = 0;

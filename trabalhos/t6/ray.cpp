@@ -3,8 +3,6 @@
 #include <limits>
 #include <cmath>
 
-#include "mpi.h"
-
 using namespace std;
 
 numeric_limits<double> real;
@@ -104,63 +102,21 @@ Scene *create(int level, const Vec &c, double r) {
 }
 
 int main(int argc, char *argv[]) {
-  //Config do programa
   int level = 6, n = 512, ss = 4;
   if (argc == 2) level = atoi(argv[1]);
-  
-  //MPI
-  int rank;//Rank
-  int p;//Processos
-  int origem;
-  int dest;
-  MPI_Status status;
-
-  //Init
-  MPI_Init(&argc, &argv);
-  MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-  MPI_Comm_size(MPI_COMM_WORLD, &p);
-
-
-  //Master
-  if(rank == 0){
-    printf("Master\n");
-    int receive[n*n];
-    MPI_Recv(receive, n*n, MPI_INT, MPI_ANY_SOURCE,0, MPI_COMM_WORLD,&status);
-    for(int i = 0 ; i < n*n ; i++){
-      cout << receive[i];
-    }
-
-  }
-  //Se proc nao for o master é um worker
-
-  else{
-    //printf("Processo %d\n",rank);
-    int output[n*n];
-    int cont = 0;
-    Vec light = unitise(Vec(-2, -2, 2));
-    Scene *s(create(level, Vec(0, -1, 0), 1));
-    int y = 0;
-    for (int y=n-1; y>=0; --y){
-      for (int x=0; x<n; ++x) {
-        double g=0;
-        for (int dx=0; dx<ss; ++dx){
-          for (int dy=0; dy<ss; ++dy) {
-            Vec dir(unitise(Vec(x+dx*1./ss-n/2., y+dy*1./ss-n/2., n)));
-            g += ray_trace(light, Ray(Vec(0, 0, -4), dir), *s);
-          }
+  Vec light = unitise(Vec(-1, -3, 2));
+  Scene *s(create(level, Vec(0, -1, 0), 1));
+  cout << "P5\n" << n << " " << n << "\n255\n";
+  for (int y=n-1; y>=0; --y)
+    for (int x=0; x<n; ++x) {
+      double g=0;
+      for (int dx=0; dx<ss; ++dx)
+        for (int dy=0; dy<ss; ++dy) {
+          Vec dir(unitise(Vec(x+dx*1./ss-n/2., y+dy*1./ss-n/2., n)));
+          g += ray_trace(light, Ray(Vec(0, 0, -4), dir), *s);
         }
-      //Salva output em vetor de char com tamanho n
-      output[cont] = int(.5 + 255. * g / (ss*ss));
-      //cout << char(int(.5 + 255. * g / (ss*ss)));
-      cont++;
-      //printf("%d\n",output[cont]);
+      cout << char(int(.5 + 255. * g / (ss*ss)));
     }
-  }
   delete s;
-  //Envia para o master
-  //(data, size, tipo, dest, tag, MPI_COMM_WORLD)
-  MPI_Send(output, n*n, MPI_INT, 0, 0, MPI_COMM_WORLD);
-}
-  MPI_Finalize();
   return 0;
 }
