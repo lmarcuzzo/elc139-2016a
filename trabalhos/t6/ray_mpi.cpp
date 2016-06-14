@@ -104,7 +104,7 @@ Scene *create(int level, const Vec &c, double r) {
 
 //Main
 int main(int argc, char *argv[]) {
-  int level = 6, n = 512, ss = 4;
+  int level = 6, n = 256, ss = 4;
   if (argc == 2) level = atoi(argv[1]);
   Vec light = unitise(Vec(-1, -3, 2));
   Scene *s(create(level, Vec(0, -1, 0), 1));
@@ -121,21 +121,20 @@ int main(int argc, char *argv[]) {
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
   MPI_Comm_size(MPI_COMM_WORLD, &pID);
 
-  int chunk = n / (pID-1);
+  
 
   //Master
   if(rank == 0){
-    printf("Size = %d\n",pID);
     int receive[(n*n)/(pID-1)];
     vector<int> v;
     ofstream file;
     file.open("test.ppm");
     file << "P5\n" << n << " " << n << "\n255\n";
-    for(origem = pID-1 ; origem > 0 ; origem--){
-      cout << "Recebido de processo" << origem << "\n";
+    for(origem = 1 ; origem < pID ; origem++){
+      //cout << "Recebido de processo" << origem << "\n";
       MPI_Recv(receive, (n*n)/(pID-1), MPI_INT, origem,0, MPI_COMM_WORLD,&status);
       //Copia conteudo recebido para vector
-      for(int i=0 ; i < (n*n)/(pID-1);i++){
+      for(int i=0 ;i <= (n*n)/(pID-1) ; i++){
         v.push_back(receive[i]);
       }
     }
@@ -147,13 +146,26 @@ int main(int argc, char *argv[]) {
   }
   //Parte que os workers irao executar
   else{
+    //Parte do trablho que devera ser feita por esse worker
+    int local_work = (n) / (pID - 1);
+    int local_init, local_end;
 
-    int output[n*n];
+    //Primeiro worker
+    if(rank == 1){
+      local_init = 0;
+      local_end = local_work;
+    }
+    else{
+      local_init = (local_work * rank) - local_work;
+      local_end = local_init + local_work;
+    }
+
+    //printf("local_work %d local_init %d local_end %d\n",local_work,local_init,local_end );
+
+    int output[(n*n)/(pID-1)];
     int cont = 0;
 
-    printf("%d\n",rank);
-
-    for (int y=n; y>=0; --y)
+    for (int y=local_end-1; y>=local_init; --y)
       for (int x=0; x<n; ++x) {
         double g=0;
         for (int dx=0; dx<ss; ++dx)
@@ -164,7 +176,6 @@ int main(int argc, char *argv[]) {
         output[cont] = int(.5 + 255. * g / (ss*ss));
         cont++;
       }
-      printf("%d\n",cont );
       delete s;
       MPI_Send(output, (n*n)/(pID-1), MPI_INT, 0, 0, MPI_COMM_WORLD);
     }
