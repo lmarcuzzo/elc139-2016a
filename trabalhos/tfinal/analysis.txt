@@ -1,0 +1,2519 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 81.10      2.66     2.66  4200000     0.00     0.00  df_tokenise
+  3.96      2.79     0.13  4200006     0.00     0.00  df_readascii
+  3.81      2.92     0.13  4200000     0.00     0.00  store2d_point
+  2.29      2.99     0.08        6     0.01     0.54  get_data
+  1.83      3.05     0.06 37800000     0.00     0.00  check_missing
+  1.22      3.09     0.04  4200006     0.00     0.00  df_gets
+  1.22      3.13     0.04  1400042     0.00     0.00  execute_at
+  0.61      3.15     0.02  4200006     0.00     0.00  df_readline
+  0.61      3.17     0.02  2800000     0.00     0.00  pop_or_convert_from_string
+  0.61      3.19     0.02        6     0.00     0.01  plot_lines
+  0.30      3.20     0.01  4200006     0.00     0.00  check_for_variable_color
+  0.30      3.21     0.01  2800052     0.00     0.00  Gcomplex
+  0.30      3.22     0.01  1400042     0.00     0.00  evaluate_at
+  0.30      3.23     0.01  1400000     0.00     0.00  f_div
+  0.30      3.24     0.01  1400000     0.00     0.00  f_dollars
+  0.30      3.25     0.01   600050     0.00     0.00  SVG_vector
+  0.30      3.26     0.01   600025     0.00     0.00  map_y
+  0.30      3.27     0.01   600023     0.00     0.00  map_x
+  0.30      3.28     0.01                             fpe
+  0.00      3.28     0.00  4200042     0.00     0.00  pop
+  0.00      3.28     0.00  4200042     0.00     0.00  push
+  0.00      3.28     0.00  1400042     0.00     0.00  check_stack
+  0.00      3.28     0.00  1400042     0.00     0.00  reset_stack
+  0.00      3.28     0.00  1400036     0.00     0.00  f_pushc
+  0.00      3.28     0.00  1400022     0.00     0.00  real
+  0.00      3.28     0.00   102361     0.00     0.00  SVG_AddSpaceOrNewline
+  0.00      3.28     0.00     1954     0.00     0.00  equals
+  0.00      3.28     0.00     1217     0.00     0.00  almost_equals
+  0.00      3.28     0.00      227     0.00     0.00  gp_strdup
+  0.00      3.28     0.00      222     0.00     0.00  gp_alloc
+  0.00      3.28     0.00      167     0.00     0.00  add_udv_by_name
+  0.00      3.28     0.00      120     0.00     0.00  SVG_Pen_RealID
+  0.00      3.28     0.00      118     0.00     0.00  SVG_GroupFilledClose
+  0.00      3.28     0.00      103     0.00     0.00  ENHsvg_writec
+  0.00      3.28     0.00       90     0.00     0.00  isletter
+  0.00      3.28     0.00       85     0.00     0.00  gpfree_string
+  0.00      3.28     0.00       83     0.00     0.00  gp_realloc
+  0.00      3.28     0.00       71     0.00     0.00  SVG_PathClose
+  0.00      3.28     0.00       66     0.00     0.00  cp_extend
+  0.00      3.28     0.00       56     0.00     0.00  fill_gpval_string
+  0.00      3.28     0.00       56     0.00     0.00  parse_esc
+  0.00      3.28     0.00       55     0.00     0.00  ENHsvg_OPEN
+  0.00      3.28     0.00       54     0.00     0.00  df_parse_string_field
+  0.00      3.28     0.00       48     0.00     0.00  add_action
+  0.00      3.28     0.00       48     0.00     0.00  ignore_enhanced
+  0.00      3.28     0.00       48     0.00     0.00  parse_primary_expression
+  0.00      3.28     0.00       48     0.00     0.00  parse_unary_expression
+  0.00      3.28     0.00       47     0.00     0.00  free_at
+  0.00      3.28     0.00       46     0.00     0.00  accept_AND_expression
+  0.00      3.28     0.00       46     0.00     0.00  accept_additive_expression
+  0.00      3.28     0.00       46     0.00     0.00  accept_bitshift_expression
+  0.00      3.28     0.00       46     0.00     0.00  accept_equality_expression
+  0.00      3.28     0.00       46     0.00     0.00  accept_exclusive_OR_expression
+  0.00      3.28     0.00       46     0.00     0.00  accept_inclusive_OR_expression
+  0.00      3.28     0.00       46     0.00     0.00  accept_logical_AND_expression
+  0.00      3.28     0.00       46     0.00     0.00  accept_logical_OR_expression
+  0.00      3.28     0.00       46     0.00     0.00  accept_multiplicative_expression
+  0.00      3.28     0.00       46     0.00     0.00  accept_relational_expression
+  0.00      3.28     0.00       46     0.00     0.00  isanumber
+  0.00      3.28     0.00       46     0.00     0.00  parse_AND_expression
+  0.00      3.28     0.00       46     0.00     0.00  parse_additive_expression
+  0.00      3.28     0.00       46     0.00     0.00  parse_assignment_expression
+  0.00      3.28     0.00       46     0.00     0.00  parse_bitshift_expression
+  0.00      3.28     0.00       46     0.00     0.00  parse_conditional_expression
+  0.00      3.28     0.00       46     0.00     0.00  parse_equality_expression
+  0.00      3.28     0.00       46     0.00     0.00  parse_exclusive_OR_expression
+  0.00      3.28     0.00       46     0.00     0.00  parse_expression
+  0.00      3.28     0.00       46     0.00     0.00  parse_inclusive_OR_expression
+  0.00      3.28     0.00       46     0.00     0.00  parse_logical_AND_expression
+  0.00      3.28     0.00       46     0.00     0.00  parse_logical_OR_expression
+  0.00      3.28     0.00       46     0.00     0.00  parse_multiplicative_expression
+  0.00      3.28     0.00       46     0.00     0.00  parse_relational_expression
+  0.00      3.28     0.00       45     0.00     0.00  SVG_GroupClose
+  0.00      3.28     0.00       44     0.00     0.00  temp_at
+  0.00      3.28     0.00       39     0.00     0.00  axis_name
+  0.00      3.28     0.00       39     0.00     0.00  set_gpval_axis_sth_double
+  0.00      3.28     0.00       38     0.00     0.00  SVG_MoveForced
+  0.00      3.28     0.00       38     0.00     0.00  SVG_PathOpen
+  0.00      3.28     0.00       38     0.00     0.00  SVG_move
+  0.00      3.28     0.00       38     0.00     0.00  convert
+  0.00      3.28     0.00       38     0.00     0.00  unset_axislabel_or_title
+  0.00      3.28     0.00       36     0.00     0.00  SVG_set_color
+  0.00      3.28     0.00       36     0.00     0.00  apply_pm3dcolor
+  0.00      3.28     0.00       36     0.00     0.00  const_express
+  0.00      3.28     0.00       36     0.00     0.00  free_marklist
+  0.00      3.28     0.00       36     0.00     0.00  get_num
+  0.00      3.28     0.00       34     0.00     0.00  Gstring
+  0.00      3.28     0.00       33     0.00     0.00  SVG_GroupOpen
+  0.00      3.28     0.00       33     0.00     0.00  SVG_layer
+  0.00      3.28     0.00       30     0.00     0.00  SVG_dashtype
+  0.00      3.28     0.00       30     0.00     0.00  SVG_linetype
+  0.00      3.28     0.00       30     0.00     0.00  SVG_linewidth
+  0.00      3.28     0.00       30     0.00     0.00  term_apply_lp_properties
+  0.00      3.28     0.00       24     0.00     0.00  ENHsvg_FLUSH
+  0.00      3.28     0.00       24     0.00     0.00  SVG_justify_text
+  0.00      3.28     0.00       22     0.00     0.00  forever_iteration
+  0.00      3.28     0.00       22     0.00     0.00  real_expression
+  0.00      3.28     0.00       20     0.00     0.00  int_expression
+  0.00      3.28     0.00       20     0.00     0.00  isstring
+  0.00      3.28     0.00       19     0.00     0.00  gprintf
+  0.00      3.28     0.00       19     0.00     0.00  lp_parse
+  0.00      3.28     0.00       19     0.00     0.00  safe_strncpy
+  0.00      3.28     0.00       18     0.00     0.00  ENHsvg_put_text
+  0.00      3.28     0.00       18     0.00     0.00  Ginteger
+  0.00      3.28     0.00       18     0.00     0.00  SVG_put_text
+  0.00      3.28     0.00       18     0.00     0.00  is_definition
+  0.00      3.28     0.00       18     0.00     0.00  on_page
+  0.00      3.28     0.00       18     0.00     0.00  reset_logscale
+  0.00      3.28     0.00       18     0.00     0.00  unset_axislabel
+  0.00      3.28     0.00       18     0.00     0.00  unset_minitics
+  0.00      3.28     0.00       18     0.00     0.00  unset_range
+  0.00      3.28     0.00       18     0.00     0.00  unset_tics
+  0.00      3.28     0.00       18     0.00     0.00  unset_timedata
+  0.00      3.28     0.00       18     0.00     0.00  unset_zeroaxis
+  0.00      3.28     0.00       18     0.00     0.00  write_multiline
+  0.00      3.28     0.00       16     0.00     0.00  check_for_iteration
+  0.00      3.28     0.00       16     0.00     0.00  cleanup_iteration
+  0.00      3.28     0.00       16     0.00     0.00  empty_iteration
+  0.00      3.28     0.00       16     0.00     0.00  lookup_table
+  0.00      3.28     0.00       16     0.00     0.00  next_iteration
+  0.00      3.28     0.00       15     0.00     0.00  ENHest_put_text
+  0.00      3.28     0.00       15     0.00     0.00  estimate_strlen
+  0.00      3.28     0.00       15     0.00     0.00  fill_gpval_integer
+  0.00      3.28     0.00       14     0.00     0.00  SVG_SetFont
+  0.00      3.28     0.00       14     0.00     0.00  expand_1level_macros
+  0.00      3.28     0.00       14     0.00     0.00  map_position_r
+  0.00      3.28     0.00       14     0.00     0.00  scanner
+  0.00      3.28     0.00       14     0.00     0.00  string_expand_macros
+  0.00      3.28     0.00       14     0.00     0.00  update_gpval_variables
+  0.00      3.28     0.00       13     0.00     0.00  SVG_set_font
+  0.00      3.28     0.00       13     0.00     0.00  const_string_express
+  0.00      3.28     0.00       13     0.00     0.00  try_to_get_string
+  0.00      3.28     0.00       12     0.00     0.00  clip_point
+  0.00      3.28     0.00       12     0.00     0.27  command
+  0.00      3.28     0.00       12     0.00     0.00  edge_intersect
+  0.00      3.28     0.00       12     0.00     0.00  enhanced_recursion
+  0.00      3.28     0.00       12     0.00     0.00  get_udv_by_name
+  0.00      3.28     0.00       11     0.00     0.00  check_for_mouse_events
+  0.00      3.28     0.00       11     0.00     0.30  do_line
+  0.00      3.28     0.00       11     0.00     0.00  load_linetype
+  0.00      3.28     0.00       11     0.00     0.00  lookup_ftable
+  0.00      3.28     0.00       10     0.00     0.00  parse_range
+  0.00      3.28     0.00       10     0.00     0.00  set_command
+  0.00      3.28     0.00        9     0.00     0.00  QBasicAtomicInt::deref()
+  0.00      3.28     0.00        9     0.00     0.00  fill_gpval_axis
+  0.00      3.28     0.00        9     0.00     0.00  fill_gpval_float
+  0.00      3.28     0.00        9     0.00     0.00  label_width
+  0.00      3.28     0.00        9     0.00     0.00  lf_pop
+  0.00      3.28     0.00        9     0.00     0.00  lf_push
+  0.00      3.28     0.00        8     0.00     0.00  QString::~QString()
+  0.00      3.28     0.00        8     0.00     0.00  display_ipc_commands
+  0.00      3.28     0.00        8     0.00     0.30  do_string_and_free
+  0.00      3.28     0.00        8     0.00     0.00  parse_color_name
+  0.00      3.28     0.00        8     0.00     0.00  parse_colorspec
+  0.00      3.28     0.00        8     0.00     0.00  set_linestyle
+  0.00      3.28     0.00        7     0.00     0.00  add_udv
+  0.00      3.28     0.00        7     0.00     0.00  copy_str
+  0.00      3.28     0.00        7     0.00     0.00  gp_expand_tilde
+  0.00      3.28     0.00        7     0.00     0.00  loadpath_fopen
+  0.00      3.28     0.00        7     0.00     0.00  m_capture
+  0.00      3.28     0.00        7     0.00     0.00  widest_tic_callback
+  0.00      3.28     0.00        7     0.00     0.00  ytick2d_callback
+  0.00      3.28     0.00        6     0.00     0.00  SVG_hypertext
+  0.00      3.28     0.00        6     0.00     0.00  QBasicAtomicInt::ref()
+  0.00      3.28     0.00        6     0.00     0.00  clear_df_column_headers
+  0.00      3.28     0.00        6     0.00     0.00  clip_line
+  0.00      3.28     0.00        6     0.00     0.00  cp_alloc
+  0.00      3.28     0.00        6     0.00     0.00  default_arrow_style
+  0.00      3.28     0.00        6     0.00     0.00  df_close
+  0.00      3.28     0.00        6     0.00     0.00  df_open
+  0.00      3.28     0.00        6     0.00     0.00  df_set_key_title
+  0.00      3.28     0.00        6     0.00     0.00  df_set_plot_mode
+  0.00      3.28     0.00        6     0.00     0.00  do_key_sample
+  0.00      3.28     0.00        6     0.00     0.00  draw_clip_line
+  0.00      3.28     0.00        6     0.00     0.00  f_push
+  0.00      3.28     0.00        6     0.00     0.00  get_style
+  0.00      3.28     0.00        6     0.00     0.00  initialize_use_spec
+  0.00      3.28     0.00        6     0.00     0.00  plot_option_using
+  0.00      3.28     0.00        6     0.00     0.00  string_or_express
+  0.00      3.28     0.00        5     0.00     0.00  del_udv_by_name
+  0.00      3.28     0.00        5     0.00     0.00  xtick2d_callback
+  0.00      3.28     0.00        4     0.00     0.00  SVG_path
+  0.00      3.28     0.00        4     0.00     0.00  SVG_text_angle
+  0.00      3.28     0.00        4     0.00     0.00  QString::operator+=(QString const&)
+  0.00      3.28     0.00        4     0.00     0.00  axis_draw_2d_zeroaxis
+  0.00      3.28     0.00        4     0.00     0.00  axis_output_tics
+  0.00      3.28     0.00        4     0.00     0.00  axis_position_zeroaxis
+  0.00      3.28     0.00        4     0.00     0.00  axis_set_graphical_range
+  0.00      3.28     0.00        4     0.00     0.00  setup_tics
+  0.00      3.28     0.00        4     0.00     0.00  unset_margin
+  0.00      3.28     0.00        3     0.00     0.00  qt_noop()
+  0.00      3.28     0.00        3     0.00     0.00  QString::QString(QString const&)
+  0.00      3.28     0.00        3     0.00     0.00  QString::QString()
+  0.00      3.28     0.00        3     0.00     0.00  gen_tics
+  0.00      3.28     0.00        3     0.00     0.00  invalidate_palette
+  0.00      3.28     0.00        3     0.00     0.00  is_plot_with_colorbox
+  0.00      3.28     0.00        3     0.00     0.00  is_plot_with_palette
+  0.00      3.28     0.00        3     0.00     0.00  load_rcfile
+  0.00      3.28     0.00        3     0.00     0.00  place_objects
+  0.00      3.28     0.00        2     0.00     0.00  QBasicAtomicInt::operator!=(int) const
+  0.00      3.28     0.00        2     0.00     0.00  axis_checked_extend_empty_range
+  0.00      3.28     0.00        2     0.00     0.00  axis_log_value_checked
+  0.00      3.28     0.00        2     0.00     0.00  axis_revert_and_unlog_range
+  0.00      3.28     0.00        2     0.00     0.00  axis_revert_range
+  0.00      3.28     0.00        2     0.00     0.00  axis_unlog_interval
+  0.00      3.28     0.00        2     0.00     0.00  change_term
+  0.00      3.28     0.00        2     0.00     0.00  closepath
+  0.00      3.28     0.00        2     0.00     0.00  copy_or_invent_formatstring
+  0.00      3.28     0.00        2     0.00     0.00  do_pointsize
+  0.00      3.28     0.00        2     0.00     0.00  free_histlist
+  0.00      3.28     0.00        2     0.00     0.00  load_one_range
+  0.00      3.28     0.00        2     0.00     0.00  m_quote_capture
+  0.00      3.28     0.00        2     0.00     0.00  make_tics
+  0.00      3.28     0.00        2     0.00     0.00  newpath
+  0.00      3.28     0.00        2     0.00     0.00  not_a_number
+  0.00      3.28     0.00        2     0.00     0.00  perm_at
+  0.00      3.28     0.00        2     0.00     0.00  place_arrows
+  0.00      3.28     0.00        2     0.00     0.00  place_labels
+  0.00      3.28     0.00        2     0.00     0.00  place_parallel_axes
+  0.00      3.28     0.00        2     0.00     0.00  plot_border
+  0.00      3.28     0.00        2     0.00     0.00  quantize_normal_tics
+  0.00      3.28     0.00        2     0.00     0.00  round_outward
+  0.00      3.28     0.00        2     0.00     0.00  sp_free
+  0.00      3.28     0.00        2     0.00     0.00  term_reset
+  0.00      3.28     0.00        1     0.00     0.00  GetAnnotateString
+  0.00      3.28     0.00        1     0.00     0.00  MousePosToGraphPosReal
+  0.00      3.28     0.00        1     0.00     0.00  SVG_graphics
+  0.00      3.28     0.00        1     0.00     0.00  SVG_init
+  0.00      3.28     0.00        1     0.00     0.00  SVG_local_reset
+  0.00      3.28     0.00        1     0.00     0.00  SVG_options
+  0.00      3.28     0.00        1     0.00     0.00  SVG_reset
+  0.00      3.28     0.00        1     0.00     0.00  SVG_text
+  0.00      3.28     0.00        1     0.00     0.00  UpdateStatusline
+  0.00      3.28     0.00        1     0.00     0.00  UpdateStatuslineWithMouseSetting
+  0.00      3.28     0.00        1     0.00     0.00  X11_args
+  0.00      3.28     0.00        1     0.00     0.00  _GLOBAL__sub_I__Z18qt_encodingToCodec15set_encoding_id
+  0.00      3.28     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      3.28     0.00        1     0.00     0.00  ensureOptionsCreated()
+  0.00      3.28     0.00        1     0.00     0.00  QByteArray::data()
+  0.00      3.28     0.00        1     0.00     0.00  QByteArray::detach()
+  0.00      3.28     0.00        1     0.00     0.00  QByteArray::~QByteArray()
+  0.00      3.28     0.00        1     0.00     0.00  QChar::unicode()
+  0.00      3.28     0.00        1     0.00     0.00  QColor::QColor(int, int, int, int)
+  0.00      3.28     0.00        1     0.00     0.00  QPoint::QPoint()
+  0.00      3.28     0.00        1     0.00     0.00  QString::QString(char const*)
+  0.00      3.28     0.00        1     0.00     0.00  QString::operator+=(QChar)
+  0.00      3.28     0.00        1     0.00     0.00  QtOption::QtOption()
+  0.00      3.28     0.00        1     0.00     0.00  operator+(char const*, QString const&)
+  0.00      3.28     0.00        1     0.00     0.00  operator+(QString const&, char const*)
+  0.00      3.28     0.00        1     0.00     0.00  operator+(QString const&, QString const&)
+  0.00      3.28     0.00        1     0.00     0.00  operator+(QString const&, char)
+  0.00      3.28     0.00        1     0.00     0.00  adjust_offsets
+  0.00      3.28     0.00        1     0.00     0.00  boundary
+  0.00      3.28     0.00        1     0.00     0.00  builtin_cancel_zoom
+  0.00      3.28     0.00        1     0.00     0.00  clear_binary_records
+  0.00      3.28     0.00        1     0.00     0.00  cp_free
+  0.00      3.28     0.00        1     0.00     0.00  define
+  0.00      3.28     0.00        1     0.00     0.00  df_unset_datafile_binary
+  0.00      3.28     0.00        1     0.00     0.00  do_key_bounds
+  0.00      3.28     0.00        1     0.00     0.00  do_key_layout
+  0.00      3.28     0.00        1     0.00     0.06  do_plot
+  0.00      3.28     0.00        1     0.00     0.00  draw_key
+  0.00      3.28     0.00        1     0.00     0.00  draw_titles
+  0.00      3.28     0.00        1     0.00     3.27  eval_plots
+  0.00      3.28     0.00        1     0.00     0.00  event_reset
+  0.00      3.28     0.00        1     0.00     0.00  expand_df_column
+  0.00      3.28     0.00        1     0.00     0.00  extend_input_line
+  0.00      3.28     0.00        1     0.00     0.00  extend_token_table
+  0.00      3.28     0.00        1     0.00     0.00  find_maxl_keys
+  0.00      3.28     0.00        1     0.00     0.00  free_arrowstyle
+  0.00      3.28     0.00        1     0.00     0.00  get_terminals_names
+  0.00      3.28     0.00        1     0.00     0.00  get_user_env
+  0.00      3.28     0.00        1     0.00     0.00  gp_atexit
+  0.00      3.28     0.00        1     0.00     0.00  gp_exit_cleanup
+  0.00      3.28     0.00        1     0.00     0.00  init_color
+  0.00      3.28     0.00        1     0.00     0.00  init_constants
+  0.00      3.28     0.00        1     0.00     0.00  init_fit
+  0.00      3.28     0.00        1     0.00     0.00  init_histogram
+  0.00      3.28     0.00        1     0.00     0.00  init_memory
+  0.00      3.28     0.00        1     0.00     2.38  init_session
+  0.00      3.28     0.00        1     0.00     0.00  init_terminal
+  0.00      3.28     0.00        1     0.00     0.00  interrupt_setup
+  0.00      3.28     0.00        1     0.00     0.89  load_file
+  0.00      3.28     0.00        1     0.00     0.00  load_range
+  0.00      3.28     0.00        1     0.00     0.00  loadpath_handler
+  0.00      3.28     0.00        1     0.00     0.00  locale_handler
+  0.00      3.28     0.00        1     0.00     0.00  parse_driver
+  0.00      3.28     0.00        1     0.00     0.00  place_grid
+  0.00      3.28     0.00        1     0.00     0.00  place_histogram_titles
+  0.00      3.28     0.00        1     0.00     3.27  plot_command
+  0.00      3.28     0.00        1     0.00     0.00  plot_mode
+  0.00      3.28     0.00        1     0.00     3.27  plotrequest
+  0.00      3.28     0.00        1     0.00     0.00  pm3d_reset
+  0.00      3.28     0.00        1     0.00     0.00  prepare_call
+  0.00      3.28     0.00        1     0.00     0.00  push_terminal
+  0.00      3.28     0.00        1     0.00     0.00  qt_options
+  0.00      3.28     0.00        1     0.00     0.00  recalc_statusline
+  0.00      3.28     0.00        1     0.00     0.00  reset_colorbox
+  0.00      3.28     0.00        1     0.00     0.00  reset_command
+  0.00      3.28     0.00        1     0.00     0.00  reset_hidden3doptions
+  0.00      3.28     0.00        1     0.00     0.00  reset_key
+  0.00      3.28     0.00        1     0.00     0.00  reset_palette
+  0.00      3.28     0.00        1     0.00     0.00  save_writeback_all_axes
+  0.00      3.28     0.00        1     0.00     0.00  set_cbminmax
+  0.00      3.28     0.00        1     0.00     2.38  set_colorsequence
+  0.00      3.28     0.00        1     0.00     0.00  set_output
+  0.00      3.28     0.00        1     0.00     0.00  set_plot_with_palette
+  0.00      3.28     0.00        1     0.00     0.00  set_term
+  0.00      3.28     0.00        1     0.00     0.00  set_terminal
+  0.00      3.28     0.00        1     0.00     0.00  show_version
+  0.00      3.28     0.00        1     0.00     0.00  splot_map_deactivate
+  0.00      3.28     0.00        1     0.00     0.00  term_close_output
+  0.00      3.28     0.00        1     0.00     0.00  term_end_plot
+  0.00      3.28     0.00        1     0.00     0.00  term_initialise
+  0.00      3.28     0.00        1     0.00     0.00  term_set_output
+  0.00      3.28     0.00        1     0.00     0.00  term_start_plot
+  0.00      3.28     0.00        1     0.00     0.00  unset_angles
+  0.00      3.28     0.00        1     0.00     0.00  unset_arrowstyles
+  0.00      3.28     0.00        1     0.00     0.00  unset_boxplot
+  0.00      3.28     0.00        1     0.00     0.00  unset_boxwidth
+  0.00      3.28     0.00        1     0.00     0.00  unset_cntrlabel
+  0.00      3.28     0.00        1     0.00     0.00  unset_cntrparam
+  0.00      3.28     0.00        1     0.00     0.00  unset_contour
+  0.00      3.28     0.00        1     0.00     0.00  unset_dgrid3d
+  0.00      3.28     0.00        1     0.00     0.00  unset_dummy
+  0.00      3.28     0.00        1     0.00     0.00  unset_fillstyle
+  0.00      3.28     0.00        1     0.00     0.00  unset_fit
+  0.00      3.28     0.00        1     0.00     0.00  unset_grid
+  0.00      3.28     0.00        1     0.00     0.00  unset_histogram
+  0.00      3.28     0.00        1     0.00     0.00  unset_isosamples
+  0.00      3.28     0.00        1     0.00     0.00  unset_mapping
+  0.00      3.28     0.00        1     0.00     0.00  unset_missing
+  0.00      3.28     0.00        1     0.00     0.00  unset_offsets
+  0.00      3.28     0.00        1     0.00     0.00  unset_origin
+  0.00      3.28     0.00        1     0.00     0.00  unset_parametric
+  0.00      3.28     0.00        1     0.00     0.00  unset_pointintervalbox
+  0.00      3.28     0.00        1     0.00     0.00  unset_pointsize
+  0.00      3.28     0.00        1     0.00     0.00  unset_polar
+  0.00      3.28     0.00        1     0.00     0.00  unset_samples
+  0.00      3.28     0.00        1     0.00     0.00  unset_size
+  0.00      3.28     0.00        1     0.00     0.00  unset_style_circle
+  0.00      3.28     0.00        1     0.00     0.00  unset_style_ellipse
+  0.00      3.28     0.00        1     0.00     0.00  unset_style_rectangle
+  0.00      3.28     0.00        1     0.00     0.00  unset_textbox_style
+  0.00      3.28     0.00        1     0.00     0.00  unset_ticslevel
+  0.00      3.28     0.00        1     0.00     0.00  unset_timefmt
+  0.00      3.28     0.00        1     0.00     0.00  unset_timestamp
+  0.00      3.28     0.00        1     0.00     0.00  unset_view
+  0.00      3.28     0.00        1     0.00     0.00  unset_zero
+  0.00      3.28     0.00        1     0.00     0.00  update_plot_bounds
+  0.00      3.28     0.00        1     0.00     0.00  update_ruler
+  0.00      3.28     0.00        1     0.00     0.00  xy_format
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.30% of 3.28 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     99.7    0.00    3.27                 main [1]
+                0.00    2.38       1/1           init_session [11]
+                0.00    0.89       1/1           load_file [14]
+                0.00    0.00       1/14          update_gpval_variables [50]
+                0.00    0.00       1/1           init_constants [63]
+                0.00    0.00       2/167         add_udv_by_name [76]
+                0.00    0.00       1/1           X11_args [243]
+                0.00    0.00       1/1           init_memory [266]
+                0.00    0.00       1/1           init_terminal [267]
+                0.00    0.00       1/1           gp_atexit [261]
+                0.00    0.00       1/1           push_terminal [276]
+                0.00    0.00       1/1           show_version [288]
+                0.00    0.00       1/1           interrupt_setup [268]
+                0.00    0.00       1/1           loadpath_handler [269]
+                0.00    0.00       1/1           get_user_env [260]
+                0.00    0.00       1/1           locale_handler [270]
+                0.00    0.00       1/1           init_fit [264]
+                0.00    0.00       1/227         gp_strdup [74]
+                0.00    0.00       1/7           loadpath_fopen [184]
+                0.00    0.00       1/1           gp_exit_cleanup [262]
+-----------------------------------------------
+                0.00    3.27      12/12          do_line [3]
+[2]     99.7    0.00    3.27      12         command [2]
+                0.00    3.27       1/1           plot_command [4]
+                0.00    0.00      10/10          set_command [34]
+                0.00    0.00       1/1           define [60]
+                0.00    0.00      12/18          is_definition [146]
+                0.00    0.00      11/11          lookup_ftable [176]
+-----------------------------------------------
+                0.00    0.89       3/11          load_file [14]
+                0.00    2.38       8/11          do_string_and_free [12]
+[3]     99.7    0.00    3.27      11         do_line [3]
+                0.00    3.27      12/12          command [2]
+                0.00    0.00      11/14          string_expand_macros [168]
+                0.00    0.00      11/14          scanner [167]
+                0.00    0.00      11/11          check_for_mouse_events [174]
+                0.00    0.00       1/1954        equals [72]
+-----------------------------------------------
+                0.00    3.27       1/1           command [2]
+[4]     99.7    0.00    3.27       1         plot_command [4]
+                0.00    3.27       1/1           plotrequest [5]
+                0.00    0.00       8/167         add_udv_by_name [76]
+                0.00    0.00       1/1           plot_mode [273]
+-----------------------------------------------
+                0.00    3.27       1/1           plot_command [4]
+[5]     99.7    0.00    3.27       1         plotrequest [5]
+                0.00    3.27       1/1           eval_plots [6]
+                0.00    0.00       4/10          parse_range [51]
+                0.00    0.00       1/1           splot_map_deactivate [289]
+                0.00    0.00       1/1954        equals [72]
+-----------------------------------------------
+                0.00    3.27       1/1           plotrequest [5]
+[6]     99.7    0.00    3.27       1         eval_plots [6]
+                0.08    3.14       6/6           get_data [7]
+                0.00    0.06       1/1           do_plot [19]
+                0.00    0.00      11/19          lp_parse [35]
+                0.00    0.00       6/6           df_open [42]
+                0.00    0.00       6/6           string_or_express [44]
+                0.00    0.00       6/10          parse_range [51]
+                0.00    0.00       1/14          update_gpval_variables [50]
+                0.00    0.00       1/2800052     Gcomplex [26]
+                0.00    0.00     105/1217        almost_equals [73]
+                0.00    0.00      23/1954        equals [72]
+                0.00    0.00      12/22          forever_iteration [139]
+                0.00    0.00      11/11          load_linetype [175]
+                0.00    0.00       7/7           m_capture [185]
+                0.00    0.00       6/16          check_for_iteration [156]
+                0.00    0.00       6/18          is_definition [146]
+                0.00    0.00       6/6           cp_alloc [190]
+                0.00    0.00       6/6           df_set_plot_mode [194]
+                0.00    0.00       6/167         add_udv_by_name [76]
+                0.00    0.00       6/6           get_style [196]
+                0.00    0.00       6/16          empty_iteration [158]
+                0.00    0.00       6/16          next_iteration [160]
+                0.00    0.00       6/16          cleanup_iteration [157]
+                0.00    0.00       2/2           axis_checked_extend_empty_range [211]
+                0.00    0.00       2/2           axis_revert_and_unlog_range [213]
+                0.00    0.00       1/2           free_histlist [220]
+                0.00    0.00       1/1           init_histogram [265]
+                0.00    0.00       1/1           set_cbminmax [284]
+                0.00    0.00       1/56          fill_gpval_string [85]
+                0.00    0.00       1/1           save_writeback_all_axes [283]
+-----------------------------------------------
+                0.08    3.14       6/6           eval_plots [6]
+[7]     97.9    0.08    3.14       6         get_data [7]
+                0.02    2.99 4200006/4200006     df_readline [8]
+                0.13    0.00 4200000/4200000     store2d_point [15]
+                0.00    0.00      66/66          cp_extend [84]
+                0.00    0.00       6/6           df_set_key_title [193]
+                0.00    0.00       6/6           df_close [192]
+-----------------------------------------------
+                0.02    2.99 4200006/4200006     get_data [7]
+[8]     91.8    0.02    2.99 4200006         df_readline [8]
+                0.13    2.86 4200006/4200006     df_readascii [9]
+-----------------------------------------------
+                0.13    2.86 4200006/4200006     df_readline [8]
+[9]     91.2    0.13    2.86 4200006         df_readascii [9]
+                2.66    0.06 4200000/4200000     df_tokenise [10]
+                0.01    0.09 1400000/1400042     evaluate_at [16]
+                0.04    0.00 4200006/4200006     df_gets [21]
+                0.00    0.00 1400000/1400022     real [70]
+                0.00    0.00      54/54          df_parse_string_field [88]
+-----------------------------------------------
+                2.66    0.06 4200000/4200000     df_readascii [9]
+[10]    82.9    2.66    0.06 4200000         df_tokenise [10]
+                0.06    0.00 37800000/37800000     check_missing [18]
+                0.00    0.00       1/1           expand_df_column [254]
+-----------------------------------------------
+                0.00    2.38       1/1           main [1]
+[11]    72.5    0.00    2.38       1         init_session [11]
+                0.00    2.38       1/1           set_colorsequence [13]
+                0.00    0.00       1/1           reset_command [62]
+                0.00    0.00       3/3           load_rcfile [209]
+                0.00    0.00       1/5           del_udv_by_name [198]
+-----------------------------------------------
+                0.00    2.38       8/8           set_colorsequence [13]
+[12]    72.5    0.00    2.38       8         do_string_and_free [12]
+                0.00    2.38       8/11          do_line [3]
+                0.00    0.00       8/8           display_ipc_commands [180]
+                0.00    0.00       8/9           lf_push [179]
+                0.00    0.00       8/9           lf_pop [178]
+-----------------------------------------------
+                0.00    2.38       1/1           init_session [11]
+[13]    72.5    0.00    2.38       1         set_colorsequence [13]
+                0.00    2.38       8/8           do_string_and_free [12]
+                0.00    0.00       8/222         gp_alloc [75]
+-----------------------------------------------
+                0.00    0.89       1/1           main [1]
+[14]    27.2    0.00    0.89       1         load_file [14]
+                0.00    0.89       3/11          do_line [3]
+                0.00    0.00       3/14          scanner [167]
+                0.00    0.00       3/14          string_expand_macros [168]
+                0.00    0.00       1/167         add_udv_by_name [76]
+                0.00    0.00       1/18          Ginteger [144]
+                0.00    0.00       1/9           lf_push [179]
+                0.00    0.00       1/1           prepare_call [275]
+                0.00    0.00       1/9           lf_pop [178]
+-----------------------------------------------
+                0.13    0.00 4200000/4200000     get_data [7]
+[15]     3.8    0.13    0.00 4200000         store2d_point [15]
+-----------------------------------------------
+                0.00    0.00       6/1400042     string_or_express [44]
+                0.00    0.00      36/1400042     const_express [31]
+                0.01    0.09 1400000/1400042     df_readascii [9]
+[16]     3.0    0.01    0.09 1400042         evaluate_at [16]
+                0.04    0.05 1400042/1400042     execute_at [17]
+                0.00    0.00 1400042/1400042     reset_stack [68]
+                0.00    0.00 1400042/1400042     check_stack [67]
+                0.00    0.00 1400042/4200042     pop [65]
+-----------------------------------------------
+                0.04    0.05 1400042/1400042     evaluate_at [16]
+[17]     2.7    0.04    0.05 1400042         execute_at [17]
+                0.01    0.02 1400000/1400000     f_div [22]
+                0.01    0.00 1400000/1400000     f_dollars [24]
+                0.00    0.00 1400036/1400036     f_pushc [69]
+                0.00    0.00       6/6           f_push [195]
+-----------------------------------------------
+                0.06    0.00 37800000/37800000     df_tokenise [10]
+[18]     1.8    0.06    0.00 37800000         check_missing [18]
+-----------------------------------------------
+                0.00    0.06       1/1           eval_plots [6]
+[19]     1.8    0.00    0.06       1         do_plot [19]
+                0.02    0.04       6/6           plot_lines [20]
+                0.00    0.00       1/1           place_grid [46]
+                0.00    0.00       1/1           boundary [49]
+                0.00    0.00       2/2           plot_border [56]
+                0.00    0.00       6/6           do_key_sample [57]
+                0.00    0.00      15/33          SVG_layer [132]
+                0.00    0.00      12/48          ignore_enhanced [90]
+                0.00    0.00       6/6           SVG_hypertext [187]
+                0.00    0.00       6/30          term_apply_lp_properties [136]
+                0.00    0.00       4/4           axis_draw_2d_zeroaxis [201]
+                0.00    0.00       3/3           place_objects [210]
+                0.00    0.00       2/3           is_plot_with_palette [208]
+                0.00    0.00       2/2           place_parallel_axes [228]
+                0.00    0.00       2/3           is_plot_with_colorbox [207]
+                0.00    0.00       2/2           place_labels [227]
+                0.00    0.00       2/2           place_arrows [226]
+                0.00    0.00       1/1           term_start_plot [294]
+                0.00    0.00       1/1           term_initialise [292]
+                0.00    0.00       1/1           adjust_offsets [244]
+                0.00    0.00       1/1           set_plot_with_palette [285]
+                0.00    0.00       1/1           draw_titles [252]
+                0.00    0.00       1/1           draw_key [251]
+                0.00    0.00       1/1           place_histogram_titles [272]
+                0.00    0.00       1/1           term_end_plot [291]
+-----------------------------------------------
+                0.02    0.04       6/6           do_plot [19]
+[20]     1.8    0.02    0.04       6         plot_lines [20]
+                0.01    0.00 4200000/4200006     check_for_variable_color [25]
+                0.01    0.00  600018/600023      map_x [29]
+                0.01    0.00  600018/600025      map_y [28]
+                0.01    0.00  600012/600050      SVG_vector [27]
+                0.00    0.00      12/12          edge_intersect [171]
+                0.00    0.00       6/38          SVG_move [123]
+-----------------------------------------------
+                0.04    0.00 4200006/4200006     df_readascii [9]
+[21]     1.2    0.04    0.00 4200006         df_gets [21]
+-----------------------------------------------
+                0.01    0.02 1400000/1400000     execute_at [17]
+[22]     1.1    0.01    0.02 1400000         f_div [22]
+                0.02    0.00 2800000/2800000     pop_or_convert_from_string [23]
+                0.00    0.00 1400000/2800052     Gcomplex [26]
+                0.00    0.00 1400000/4200042     push [66]
+-----------------------------------------------
+                0.02    0.00 2800000/2800000     f_div [22]
+[23]     0.6    0.02    0.00 2800000         pop_or_convert_from_string [23]
+                0.00    0.00 2800000/4200042     pop [65]
+-----------------------------------------------
+                0.01    0.00 1400000/1400000     execute_at [17]
+[24]     0.5    0.01    0.00 1400000         f_dollars [24]
+                0.00    0.00 1400000/2800052     Gcomplex [26]
+                0.00    0.00 1400000/4200042     push [66]
+-----------------------------------------------
+                0.00    0.00       6/4200006     do_key_sample [57]
+                0.01    0.00 4200000/4200006     plot_lines [20]
+[25]     0.3    0.01    0.00 4200006         check_for_variable_color [25]
+-----------------------------------------------
+                0.00    0.00       1/2800052     update_gpval_variables [50]
+                0.00    0.00       1/2800052     eval_plots [6]
+                0.00    0.00       2/2800052     init_constants [63]
+                0.00    0.00       9/2800052     fill_gpval_float [61]
+                0.00    0.00      39/2800052     set_gpval_axis_sth_double [54]
+                0.00    0.00 1400000/2800052     f_dollars [24]
+                0.00    0.00 1400000/2800052     f_div [22]
+[26]     0.3    0.01    0.00 2800052         Gcomplex [26]
+-----------------------------------------------
+                0.00    0.00       6/600050      draw_clip_line [58]
+                0.00    0.00       8/600050      plot_border [56]
+                0.00    0.00      10/600050      xtick2d_callback [48]
+                0.00    0.00      14/600050      ytick2d_callback [47]
+                0.01    0.00  600012/600050      plot_lines [20]
+[27]     0.3    0.01    0.00  600050         SVG_vector [27]
+                0.00    0.00  102323/102361      SVG_AddSpaceOrNewline [71]
+-----------------------------------------------
+                0.00    0.00       7/600025      ytick2d_callback [47]
+                0.01    0.00  600018/600025      plot_lines [20]
+[28]     0.3    0.01    0.00  600025         map_y [28]
+-----------------------------------------------
+                0.00    0.00       5/600023      xtick2d_callback [48]
+                0.01    0.00  600018/600023      plot_lines [20]
+[29]     0.3    0.01    0.00  600023         map_x [29]
+-----------------------------------------------
+                                                 <spontaneous>
+[30]     0.3    0.01    0.00                 fpe [30]
+-----------------------------------------------
+                0.00    0.00       1/36          define [60]
+                0.00    0.00      13/36          const_string_express [39]
+                0.00    0.00      22/36          real_expression [32]
+[31]     0.0    0.00    0.00      36         const_express [31]
+                0.00    0.00      36/1400042     evaluate_at [16]
+                0.00    0.00      36/1954        equals [72]
+                0.00    0.00      36/44          temp_at [119]
+-----------------------------------------------
+                0.00    0.00       2/22          load_one_range [52]
+                0.00    0.00      20/22          int_expression [33]
+[32]     0.0    0.00    0.00      22         real_expression [32]
+                0.00    0.00      22/36          const_express [31]
+                0.00    0.00      22/1400022     real [70]
+                0.00    0.00      22/85          gpfree_string [81]
+-----------------------------------------------
+                0.00    0.00       4/20          plot_option_using [43]
+                0.00    0.00       8/20          parse_color_name [36]
+                0.00    0.00       8/20          set_linestyle [38]
+[33]     0.0    0.00    0.00      20         int_expression [33]
+                0.00    0.00      20/22          real_expression [32]
+-----------------------------------------------
+                0.00    0.00      10/10          command [2]
+[34]     0.0    0.00    0.00      10         set_command [34]
+                0.00    0.00       8/8           set_linestyle [38]
+                0.00    0.00      10/14          update_gpval_variables [50]
+                0.00    0.00       1/1           set_output [59]
+                0.00    0.00      10/16          check_for_iteration [156]
+                0.00    0.00      10/16          empty_iteration [158]
+                0.00    0.00      10/22          forever_iteration [139]
+                0.00    0.00      10/16          lookup_table [159]
+                0.00    0.00      10/16          next_iteration [160]
+                0.00    0.00      10/16          cleanup_iteration [157]
+                0.00    0.00       8/1954        equals [72]
+                0.00    0.00       1/1           set_terminal [287]
+-----------------------------------------------
+                0.00    0.00       8/19          set_linestyle [38]
+                0.00    0.00      11/19          eval_plots [6]
+[35]     0.0    0.00    0.00      19         lp_parse [35]
+                0.00    0.00       8/8           parse_colorspec [37]
+                0.00    0.00     145/1954        equals [72]
+                0.00    0.00     125/1217        almost_equals [73]
+-----------------------------------------------
+                0.00    0.00       8/8           parse_colorspec [37]
+[36]     0.0    0.00    0.00       8         parse_color_name [36]
+                0.00    0.00       8/13          try_to_get_string [40]
+                0.00    0.00       8/20          int_expression [33]
+                0.00    0.00       8/1217        almost_equals [73]
+-----------------------------------------------
+                0.00    0.00       8/8           lp_parse [35]
+[37]     0.0    0.00    0.00       8         parse_colorspec [37]
+                0.00    0.00       8/8           parse_color_name [36]
+                0.00    0.00      40/1954        equals [72]
+                0.00    0.00      32/1217        almost_equals [73]
+-----------------------------------------------
+                0.00    0.00       8/8           set_command [34]
+[38]     0.0    0.00    0.00       8         set_linestyle [38]
+                0.00    0.00       8/20          int_expression [33]
+                0.00    0.00       8/19          lp_parse [35]
+                0.00    0.00       8/1954        equals [72]
+                0.00    0.00       8/222         gp_alloc [75]
+                0.00    0.00       8/1217        almost_equals [73]
+-----------------------------------------------
+                0.00    0.00      13/13          try_to_get_string [40]
+[39]     0.0    0.00    0.00      13         const_string_express [39]
+                0.00    0.00      13/36          const_express [31]
+-----------------------------------------------
+                0.00    0.00       1/13          set_output [59]
+                0.00    0.00       4/13          plot_option_using [43]
+                0.00    0.00       8/13          parse_color_name [36]
+[40]     0.0    0.00    0.00      13         try_to_get_string [40]
+                0.00    0.00      13/13          const_string_express [39]
+                0.00    0.00      13/1954        equals [72]
+-----------------------------------------------
+                0.00    0.00       1/3           boundary [49]
+                0.00    0.00       2/3           axis_output_tics [45]
+[41]     0.0    0.00    0.00       3         gen_tics [41]
+                0.00    0.00       7/7           ytick2d_callback [47]
+                0.00    0.00       5/5           xtick2d_callback [48]
+                0.00    0.00      19/19          gprintf [141]
+                0.00    0.00       7/7           widest_tic_callback [186]
+-----------------------------------------------
+                0.00    0.00       6/6           eval_plots [6]
+[42]     0.0    0.00    0.00       6         df_open [42]
+                0.00    0.00       6/6           plot_option_using [43]
+                0.00    0.00     108/1217        almost_equals [73]
+                0.00    0.00      24/1954        equals [72]
+                0.00    0.00       6/6           initialize_use_spec [197]
+                0.00    0.00       6/6           clear_df_column_headers [188]
+                0.00    0.00       6/227         gp_strdup [74]
+                0.00    0.00       6/7           gp_expand_tilde [183]
+                0.00    0.00       6/7           loadpath_fopen [184]
+                0.00    0.00       1/222         gp_alloc [75]
+-----------------------------------------------
+                0.00    0.00       6/6           df_open [42]
+[43]     0.0    0.00    0.00       6         plot_option_using [43]
+                0.00    0.00       4/13          try_to_get_string [40]
+                0.00    0.00       4/20          int_expression [33]
+                0.00    0.00      36/1954        equals [72]
+                0.00    0.00      28/1217        almost_equals [73]
+                0.00    0.00      12/20          isstring [140]
+                0.00    0.00       2/2           perm_at [225]
+-----------------------------------------------
+                0.00    0.00       6/6           eval_plots [6]
+[44]     0.0    0.00    0.00       6         string_or_express [44]
+                0.00    0.00       6/1400042     evaluate_at [16]
+                0.00    0.00      12/1954        equals [72]
+                0.00    0.00       6/20          isstring [140]
+                0.00    0.00       6/44          temp_at [119]
+-----------------------------------------------
+                0.00    0.00       4/4           place_grid [46]
+[45]     0.0    0.00    0.00       4         axis_output_tics [45]
+                0.00    0.00       2/3           gen_tics [41]
+                0.00    0.00       2/4           SVG_text_angle [200]
+-----------------------------------------------
+                0.00    0.00       1/1           do_plot [19]
+[46]     0.0    0.00    0.00       1         place_grid [46]
+                0.00    0.00       4/4           axis_output_tics [45]
+                0.00    0.00       1/30          term_apply_lp_properties [136]
+-----------------------------------------------
+                0.00    0.00       7/7           gen_tics [41]
+[47]     0.0    0.00    0.00       7         ytick2d_callback [47]
+                0.00    0.00      14/600050      SVG_vector [27]
+                0.00    0.00       7/600025      map_y [28]
+                0.00    0.00      14/38          SVG_move [123]
+                0.00    0.00      14/48          ignore_enhanced [90]
+                0.00    0.00       7/14          map_position_r [166]
+                0.00    0.00       7/18          write_multiline [155]
+                0.00    0.00       7/30          term_apply_lp_properties [136]
+-----------------------------------------------
+                0.00    0.00       5/5           gen_tics [41]
+[48]     0.0    0.00    0.00       5         xtick2d_callback [48]
+                0.00    0.00      10/600050      SVG_vector [27]
+                0.00    0.00       5/600023      map_x [29]
+                0.00    0.00      10/38          SVG_move [123]
+                0.00    0.00      10/48          ignore_enhanced [90]
+                0.00    0.00       5/14          map_position_r [166]
+                0.00    0.00       5/18          write_multiline [155]
+                0.00    0.00       5/30          term_apply_lp_properties [136]
+-----------------------------------------------
+                0.00    0.00       1/1           do_plot [19]
+[49]     0.0    0.00    0.00       1         boundary [49]
+                0.00    0.00       1/3           gen_tics [41]
+                0.00    0.00       4/4           setup_tics [204]
+                0.00    0.00       4/4           axis_set_graphical_range [203]
+                0.00    0.00       2/4           SVG_text_angle [200]
+                0.00    0.00       2/9           label_width [177]
+                0.00    0.00       2/14          map_position_r [166]
+                0.00    0.00       1/1           find_maxl_keys [257]
+                0.00    0.00       1/1           do_key_layout [250]
+                0.00    0.00       1/3           is_plot_with_palette [208]
+                0.00    0.00       1/3           is_plot_with_colorbox [207]
+                0.00    0.00       1/1           do_key_bounds [249]
+-----------------------------------------------
+                0.00    0.00       1/14          main [1]
+                0.00    0.00       1/14          eval_plots [6]
+                0.00    0.00       2/14          reset_command [62]
+                0.00    0.00      10/14          set_command [34]
+[50]     0.0    0.00    0.00      14         update_gpval_variables [50]
+                0.00    0.00       9/9           fill_gpval_axis [55]
+                0.00    0.00       9/9           fill_gpval_float [61]
+                0.00    0.00       1/2800052     Gcomplex [26]
+                0.00    0.00      55/56          fill_gpval_string [85]
+                0.00    0.00       8/15          fill_gpval_integer [163]
+                0.00    0.00       3/167         add_udv_by_name [76]
+                0.00    0.00       1/1           update_plot_bounds [328]
+                0.00    0.00       1/1           get_terminals_names [259]
+                0.00    0.00       1/2           not_a_number [224]
+                0.00    0.00       1/222         gp_alloc [75]
+-----------------------------------------------
+                0.00    0.00       4/10          plotrequest [5]
+                0.00    0.00       6/10          eval_plots [6]
+[51]     0.0    0.00    0.00      10         parse_range [51]
+                0.00    0.00       1/1           load_range [53]
+                0.00    0.00      11/1954        equals [72]
+                0.00    0.00       1/90          isletter [80]
+-----------------------------------------------
+                0.00    0.00       2/2           load_range [53]
+[52]     0.0    0.00    0.00       2         load_one_range [52]
+                0.00    0.00       2/22          real_expression [32]
+                0.00    0.00      14/1954        equals [72]
+-----------------------------------------------
+                0.00    0.00       1/1           parse_range [51]
+[53]     0.0    0.00    0.00       1         load_range [53]
+                0.00    0.00       2/2           load_one_range [52]
+                0.00    0.00       7/1954        equals [72]
+-----------------------------------------------
+                0.00    0.00      39/39          fill_gpval_axis [55]
+[54]     0.0    0.00    0.00      39         set_gpval_axis_sth_double [54]
+                0.00    0.00      39/2800052     Gcomplex [26]
+                0.00    0.00      39/39          axis_name [120]
+                0.00    0.00      39/167         add_udv_by_name [76]
+-----------------------------------------------
+                0.00    0.00       9/9           update_gpval_variables [50]
+[55]     0.0    0.00    0.00       9         fill_gpval_axis [55]
+                0.00    0.00      39/39          set_gpval_axis_sth_double [54]
+-----------------------------------------------
+                0.00    0.00       2/2           do_plot [19]
+[56]     0.0    0.00    0.00       2         plot_border [56]
+                0.00    0.00       8/600050      SVG_vector [27]
+                0.00    0.00       4/33          SVG_layer [132]
+                0.00    0.00       2/30          term_apply_lp_properties [136]
+                0.00    0.00       2/2           newpath [223]
+                0.00    0.00       2/38          SVG_move [123]
+                0.00    0.00       2/2           closepath [217]
+-----------------------------------------------
+                0.00    0.00       6/6           do_plot [19]
+[57]     0.0    0.00    0.00       6         do_key_sample [57]
+                0.00    0.00       6/6           draw_clip_line [58]
+                0.00    0.00       6/4200006     check_for_variable_color [25]
+                0.00    0.00      12/33          SVG_layer [132]
+                0.00    0.00       6/36          apply_pm3dcolor [127]
+                0.00    0.00       6/24          SVG_justify_text [138]
+                0.00    0.00       6/18          write_multiline [155]
+                0.00    0.00       6/30          term_apply_lp_properties [136]
+-----------------------------------------------
+                0.00    0.00       6/6           do_key_sample [57]
+[58]     0.0    0.00    0.00       6         draw_clip_line [58]
+                0.00    0.00       6/600050      SVG_vector [27]
+                0.00    0.00       6/6           clip_line [189]
+                0.00    0.00       6/38          SVG_move [123]
+-----------------------------------------------
+                0.00    0.00       1/1           set_command [34]
+[59]     0.0    0.00    0.00       1         set_output [59]
+                0.00    0.00       1/13          try_to_get_string [40]
+                0.00    0.00       1/1954        equals [72]
+                0.00    0.00       1/1           term_set_output [293]
+                0.00    0.00       1/7           gp_expand_tilde [183]
+                0.00    0.00       1/3           invalidate_palette [206]
+-----------------------------------------------
+                0.00    0.00       1/1           command [2]
+[60]     0.0    0.00    0.00       1         define [60]
+                0.00    0.00       1/36          const_express [31]
+                0.00    0.00       1/1954        equals [72]
+                0.00    0.00       1/7           add_udv [181]
+-----------------------------------------------
+                0.00    0.00       9/9           update_gpval_variables [50]
+[61]     0.0    0.00    0.00       9         fill_gpval_float [61]
+                0.00    0.00       9/2800052     Gcomplex [26]
+                0.00    0.00       9/167         add_udv_by_name [76]
+-----------------------------------------------
+                0.00    0.00       1/1           init_session [11]
+[62]     0.0    0.00    0.00       1         reset_command [62]
+                0.00    0.00       2/14          update_gpval_variables [50]
+                0.00    0.00      19/38          unset_axislabel_or_title [125]
+                0.00    0.00      19/227         gp_strdup [74]
+                0.00    0.00      18/36          free_marklist [128]
+                0.00    0.00      18/18          unset_zeroaxis [154]
+                0.00    0.00      18/18          unset_axislabel [149]
+                0.00    0.00      18/18          unset_timedata [153]
+                0.00    0.00      18/18          unset_tics [152]
+                0.00    0.00      18/18          unset_range [151]
+                0.00    0.00      18/18          unset_minitics [150]
+                0.00    0.00      18/18          reset_logscale [148]
+                0.00    0.00       4/4           unset_margin [205]
+                0.00    0.00       2/1954        equals [72]
+                0.00    0.00       1/1217        almost_equals [73]
+                0.00    0.00       1/1           unset_isosamples [308]
+                0.00    0.00       1/1           unset_samples [317]
+                0.00    0.00       1/1           unset_arrowstyles [296]
+                0.00    0.00       1/1           unset_style_rectangle [321]
+                0.00    0.00       1/1           unset_style_ellipse [320]
+                0.00    0.00       1/1           unset_style_circle [319]
+                0.00    0.00       1/1           unset_dummy [303]
+                0.00    0.00       1/1           unset_parametric [313]
+                0.00    0.00       1/1           unset_polar [316]
+                0.00    0.00       1/1           reset_key [281]
+                0.00    0.00       1/1           unset_view [326]
+                0.00    0.00       1/1           unset_boxplot [297]
+                0.00    0.00       1/1           unset_timefmt [324]
+                0.00    0.00       1/1           unset_boxwidth [298]
+                0.00    0.00       1/1           unset_grid [306]
+                0.00    0.00       1/1           reset_hidden3doptions [280]
+                0.00    0.00       1/1           unset_angles [295]
+                0.00    0.00       1/1           unset_size [318]
+                0.00    0.00       1/1           unset_mapping [309]
+                0.00    0.00       1/1           unset_timestamp [325]
+                0.00    0.00       1/1           unset_origin [312]
+                0.00    0.00       1/1           unset_cntrlabel [299]
+                0.00    0.00       1/1           unset_cntrparam [300]
+                0.00    0.00       1/1           unset_contour [301]
+                0.00    0.00       1/1           unset_offsets [311]
+                0.00    0.00       1/1           unset_ticslevel [323]
+                0.00    0.00       1/1           unset_dgrid3d [302]
+                0.00    0.00       1/1           unset_zero [327]
+                0.00    0.00       1/1           unset_pointsize [315]
+                0.00    0.00       1/1           reset_palette [282]
+                0.00    0.00       1/1           reset_colorbox [279]
+                0.00    0.00       1/1           pm3d_reset [274]
+                0.00    0.00       1/1           unset_pointintervalbox [314]
+                0.00    0.00       1/1           unset_histogram [307]
+                0.00    0.00       1/1           unset_fillstyle [304]
+                0.00    0.00       1/1           df_unset_datafile_binary [248]
+                0.00    0.00       1/1           unset_textbox_style [322]
+                0.00    0.00       1/1           unset_missing [310]
+                0.00    0.00       1/1           unset_fit [305]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[63]     0.0    0.00    0.00       1         init_constants [63]
+                0.00    0.00       2/2800052     Gcomplex [26]
+                0.00    0.00       1/12          get_udv_by_name [173]
+                0.00    0.00       1/2           not_a_number [224]
+-----------------------------------------------
+[64]     0.0    0.00    0.00      44+604     <cycle 1 as a whole> [64]
+                0.00    0.00      48             parse_unary_expression <cycle 1> [92]
+                0.00    0.00      48             parse_primary_expression <cycle 1> [91]
+                0.00    0.00      46             parse_expression <cycle 1> [112]
+                0.00    0.00      46             accept_logical_OR_expression <cycle 1> [101]
+                0.00    0.00      46             accept_logical_AND_expression <cycle 1> [100]
+                0.00    0.00      46             accept_inclusive_OR_expression <cycle 1> [99]
+                0.00    0.00      46             accept_exclusive_OR_expression <cycle 1> [98]
+                0.00    0.00      46             accept_AND_expression <cycle 1> [94]
+                0.00    0.00      46             accept_equality_expression <cycle 1> [97]
+                0.00    0.00      46             accept_relational_expression <cycle 1> [103]
+                0.00    0.00      46             accept_bitshift_expression <cycle 1> [96]
+                0.00    0.00      46             accept_additive_expression <cycle 1> [95]
+                0.00    0.00      46             accept_multiplicative_expression <cycle 1> [102]
+                0.00    0.00      46             parse_multiplicative_expression <cycle 1> [116]
+-----------------------------------------------
+                0.00    0.00 1400042/4200042     evaluate_at [16]
+                0.00    0.00 2800000/4200042     pop_or_convert_from_string [23]
+[65]     0.0    0.00    0.00 4200042         pop [65]
+-----------------------------------------------
+                0.00    0.00       6/4200042     f_push [195]
+                0.00    0.00 1400000/4200042     f_dollars [24]
+                0.00    0.00 1400000/4200042     f_div [22]
+                0.00    0.00 1400036/4200042     f_pushc [69]
+[66]     0.0    0.00    0.00 4200042         push [66]
+                0.00    0.00       8/227         gp_strdup [74]
+-----------------------------------------------
+                0.00    0.00 1400042/1400042     evaluate_at [16]
+[67]     0.0    0.00    0.00 1400042         check_stack [67]
+-----------------------------------------------
+                0.00    0.00 1400042/1400042     evaluate_at [16]
+[68]     0.0    0.00    0.00 1400042         reset_stack [68]
+-----------------------------------------------
+                0.00    0.00 1400036/1400036     execute_at [17]
+[69]     0.0    0.00    0.00 1400036         f_pushc [69]
+                0.00    0.00 1400036/4200042     push [66]
+-----------------------------------------------
+                0.00    0.00      22/1400022     real_expression [32]
+                0.00    0.00 1400000/1400022     df_readascii [9]
+[70]     0.0    0.00    0.00 1400022         real [70]
+-----------------------------------------------
+                0.00    0.00      38/102361      SVG_MoveForced [121]
+                0.00    0.00  102323/102361      SVG_vector [27]
+[71]     0.0    0.00    0.00  102361         SVG_AddSpaceOrNewline [71]
+-----------------------------------------------
+                0.00    0.00       1/1954        do_line [3]
+                0.00    0.00       1/1954        define [60]
+                0.00    0.00       1/1954        plotrequest [5]
+                0.00    0.00       1/1954        set_output [59]
+                0.00    0.00       1/1954        set_term [286]
+                0.00    0.00       2/1954        reset_command [62]
+                0.00    0.00       3/1954        set_terminal [287]
+                0.00    0.00       6/1954        parse_assignment_expression [107]
+                0.00    0.00       7/1954        load_range [53]
+                0.00    0.00       8/1954        set_command [34]
+                0.00    0.00       8/1954        set_linestyle [38]
+                0.00    0.00      11/1954        parse_range [51]
+                0.00    0.00      12/1954        string_or_express [44]
+                0.00    0.00      13/1954        try_to_get_string [40]
+                0.00    0.00      14/1954        load_one_range [52]
+                0.00    0.00      16/1954        check_for_iteration [156]
+                0.00    0.00      23/1954        eval_plots [6]
+                0.00    0.00      24/1954        df_open [42]
+                0.00    0.00      35/1954        is_definition [146]
+                0.00    0.00      36/1954        plot_option_using [43]
+                0.00    0.00      36/1954        const_express [31]
+                0.00    0.00      40/1954        parse_colorspec [37]
+                0.00    0.00      46/1954        parse_conditional_expression [109]
+                0.00    0.00      46/1954        parse_logical_OR_expression [115]
+                0.00    0.00      46/1954        parse_logical_AND_expression [114]
+                0.00    0.00      46/1954        parse_inclusive_OR_expression [113]
+                0.00    0.00      46/1954        parse_exclusive_OR_expression [111]
+                0.00    0.00      46/1954        parse_AND_expression [105]
+                0.00    0.00      92/1954        parse_bitshift_expression [108]
+                0.00    0.00     112/1954        parse_additive_expression [106]
+                0.00    0.00     142/1954        parse_multiplicative_expression <cycle 1> [116]
+                0.00    0.00     145/1954        lp_parse [35]
+                0.00    0.00     184/1954        parse_equality_expression [110]
+                0.00    0.00     184/1954        parse_relational_expression [117]
+                0.00    0.00     192/1954        parse_unary_expression <cycle 1> [92]
+                0.00    0.00     328/1954        parse_primary_expression <cycle 1> [91]
+[72]     0.0    0.00    0.00    1954         equals [72]
+-----------------------------------------------
+                0.00    0.00       1/1217        SVG_options [238]
+                0.00    0.00       1/1217        reset_command [62]
+                0.00    0.00       8/1217        parse_color_name [36]
+                0.00    0.00       8/1217        set_linestyle [38]
+                0.00    0.00      28/1217        plot_option_using [43]
+                0.00    0.00      32/1217        parse_colorspec [37]
+                0.00    0.00     105/1217        eval_plots [6]
+                0.00    0.00     108/1217        df_open [42]
+                0.00    0.00     125/1217        lp_parse [35]
+                0.00    0.00     319/1217        lookup_ftable [176]
+                0.00    0.00     482/1217        lookup_table [159]
+[73]     0.0    0.00    0.00    1217         almost_equals [73]
+-----------------------------------------------
+                0.00    0.00       1/227         main [1]
+                0.00    0.00       1/227         init_memory [266]
+                0.00    0.00       1/227         SVG_local_reset [237]
+                0.00    0.00       1/227         SVG_init [236]
+                0.00    0.00       1/227         init_terminal [267]
+                0.00    0.00       1/227         unset_timefmt [324]
+                0.00    0.00       1/227         locale_handler [270]
+                0.00    0.00       2/227         push_terminal [276]
+                0.00    0.00       2/227         get_user_env [260]
+                0.00    0.00       6/227         df_open [42]
+                0.00    0.00       6/227         SVG_hypertext [187]
+                0.00    0.00       8/227         push [66]
+                0.00    0.00       9/227         lf_push [179]
+                0.00    0.00      10/227         lf_pop [178]
+                0.00    0.00      13/227         fill_gpval_string [85]
+                0.00    0.00      13/227         SVG_set_font [169]
+                0.00    0.00      18/227         ENHsvg_put_text [143]
+                0.00    0.00      19/227         prepare_call [275]
+                0.00    0.00      19/227         reset_command [62]
+                0.00    0.00      95/227         add_udv_by_name [76]
+[74]     0.0    0.00    0.00     227         gp_strdup [74]
+-----------------------------------------------
+                0.00    0.00       1/222         extend_input_line [255]
+                0.00    0.00       1/222         extend_token_table [256]
+                0.00    0.00       1/222         df_open [42]
+                0.00    0.00       1/222         update_gpval_variables [50]
+                0.00    0.00       1/222         show_version [288]
+                0.00    0.00       1/222         X11_args [243]
+                0.00    0.00       2/222         load_rcfile [209]
+                0.00    0.00       2/222         get_terminals_names [259]
+                0.00    0.00       6/222         SVG_hypertext [187]
+                0.00    0.00       8/222         set_colorsequence [13]
+                0.00    0.00       8/222         set_linestyle [38]
+                0.00    0.00       9/222         label_width [177]
+                0.00    0.00      12/222         gp_realloc [82]
+                0.00    0.00      12/222         cp_alloc [190]
+                0.00    0.00      18/222         lf_push [179]
+                0.00    0.00      44/222         temp_at [119]
+                0.00    0.00      95/222         add_udv_by_name [76]
+[75]     0.0    0.00    0.00     222         gp_alloc [75]
+-----------------------------------------------
+                0.00    0.00       1/167         load_file [14]
+                0.00    0.00       1/167         init_terminal [267]
+                0.00    0.00       2/167         main [1]
+                0.00    0.00       3/167         update_gpval_variables [50]
+                0.00    0.00       6/167         eval_plots [6]
+                0.00    0.00       7/167         add_udv [181]
+                0.00    0.00       8/167         plot_command [4]
+                0.00    0.00       9/167         fill_gpval_float [61]
+                0.00    0.00       9/167         lf_pop [178]
+                0.00    0.00      11/167         prepare_call [275]
+                0.00    0.00      15/167         fill_gpval_integer [163]
+                0.00    0.00      39/167         set_gpval_axis_sth_double [54]
+                0.00    0.00      56/167         fill_gpval_string [85]
+[76]     0.0    0.00    0.00     167         add_udv_by_name [76]
+                0.00    0.00      95/222         gp_alloc [75]
+                0.00    0.00      95/227         gp_strdup [74]
+-----------------------------------------------
+                0.00    0.00      24/120         SVG_set_color [126]
+                0.00    0.00      30/120         SVG_dashtype [133]
+                0.00    0.00      66/120         SVG_GroupOpen [131]
+[77]     0.0    0.00    0.00     120         SVG_Pen_RealID [77]
+-----------------------------------------------
+                0.00    0.00      20/118         SVG_PathOpen [122]
+                0.00    0.00      20/118         SVG_PathClose [83]
+                0.00    0.00      33/118         SVG_GroupOpen [131]
+                0.00    0.00      45/118         SVG_GroupClose [118]
+[78]     0.0    0.00    0.00     118         SVG_GroupFilledClose [78]
+-----------------------------------------------
+                0.00    0.00      48/103         SVG_hypertext [187]
+                0.00    0.00      55/103         enhanced_recursion [172]
+[79]     0.0    0.00    0.00     103         ENHsvg_writec [79]
+-----------------------------------------------
+                0.00    0.00       1/90          parse_range [51]
+                0.00    0.00       8/90          parse_primary_expression <cycle 1> [91]
+                0.00    0.00      35/90          is_definition [146]
+                0.00    0.00      46/90          parse_assignment_expression [107]
+[80]     0.0    0.00    0.00      90         isletter [80]
+-----------------------------------------------
+                0.00    0.00       3/85          fill_gpval_string [85]
+                0.00    0.00      10/85          prepare_call [275]
+                0.00    0.00      10/85          lf_pop [178]
+                0.00    0.00      22/85          real_expression [32]
+                0.00    0.00      40/85          free_at [93]
+[81]     0.0    0.00    0.00      85         gpfree_string [81]
+-----------------------------------------------
+                0.00    0.00       1/83          expand_df_column [254]
+                0.00    0.00       1/83          show_version [288]
+                0.00    0.00       1/83          SVG_init [236]
+                0.00    0.00       1/83          ENHest_put_text [161]
+                0.00    0.00       2/83          perm_at [225]
+                0.00    0.00       2/83          parse_driver [271]
+                0.00    0.00       2/83          m_quote_capture [221]
+                0.00    0.00       7/83          m_capture [185]
+                0.00    0.00      66/83          cp_extend [84]
+[82]     0.0    0.00    0.00      83         gp_realloc [82]
+                0.00    0.00      12/222         gp_alloc [75]
+-----------------------------------------------
+                0.00    0.00       1/71          SVG_text [240]
+                0.00    0.00       2/71          SVG_linewidth [135]
+                0.00    0.00       2/71          SVG_path [199]
+                0.00    0.00       6/71          SVG_set_color [126]
+                0.00    0.00      12/71          SVG_layer [132]
+                0.00    0.00      18/71          SVG_put_text [145]
+                0.00    0.00      30/71          SVG_linetype [134]
+[83]     0.0    0.00    0.00      71         SVG_PathClose [83]
+                0.00    0.00      20/118         SVG_GroupFilledClose [78]
+-----------------------------------------------
+                0.00    0.00      66/66          get_data [7]
+[84]     0.0    0.00    0.00      66         cp_extend [84]
+                0.00    0.00      66/83          gp_realloc [82]
+-----------------------------------------------
+                0.00    0.00       1/56          eval_plots [6]
+                0.00    0.00      55/56          update_gpval_variables [50]
+[85]     0.0    0.00    0.00      56         fill_gpval_string [85]
+                0.00    0.00      56/167         add_udv_by_name [76]
+                0.00    0.00      13/227         gp_strdup [74]
+                0.00    0.00      13/34          Gstring [130]
+                0.00    0.00       3/85          gpfree_string [81]
+-----------------------------------------------
+                0.00    0.00       2/56          m_quote_capture [221]
+                0.00    0.00      54/56          df_parse_string_field [88]
+[86]     0.0    0.00    0.00      56         parse_esc [86]
+-----------------------------------------------
+                0.00    0.00      55/55          enhanced_recursion [172]
+[87]     0.0    0.00    0.00      55         ENHsvg_OPEN [87]
+-----------------------------------------------
+                0.00    0.00      54/54          df_readascii [9]
+[88]     0.0    0.00    0.00      54         df_parse_string_field [88]
+                0.00    0.00      54/56          parse_esc [86]
+-----------------------------------------------
+                0.00    0.00       2/48          parse_multiplicative_expression <cycle 1> [116]
+                0.00    0.00      46/48          parse_primary_expression <cycle 1> [91]
+[89]     0.0    0.00    0.00      48         add_action [89]
+-----------------------------------------------
+                0.00    0.00      10/48          xtick2d_callback [48]
+                0.00    0.00      12/48          find_maxl_keys [257]
+                0.00    0.00      12/48          do_plot [19]
+                0.00    0.00      14/48          ytick2d_callback [47]
+[90]     0.0    0.00    0.00      48         ignore_enhanced [90]
+                0.00    0.00      12/13          SVG_set_font [169]
+-----------------------------------------------
+                                  48             parse_unary_expression <cycle 1> [92]
+[91]     0.0    0.00    0.00      48         parse_primary_expression <cycle 1> [91]
+                0.00    0.00     328/1954        equals [72]
+                0.00    0.00      46/46          isanumber [104]
+                0.00    0.00      46/48          add_action [89]
+                0.00    0.00      38/38          convert [124]
+                0.00    0.00       8/90          isletter [80]
+                0.00    0.00       6/7           add_udv [181]
+                0.00    0.00       2/20          isstring [140]
+                0.00    0.00       2/2           m_quote_capture [221]
+                                   2             parse_expression <cycle 1> [112]
+-----------------------------------------------
+                                   2             parse_multiplicative_expression <cycle 1> [116]
+                                  46             accept_multiplicative_expression <cycle 1> [102]
+[92]     0.0    0.00    0.00      48         parse_unary_expression <cycle 1> [92]
+                0.00    0.00     192/1954        equals [72]
+                                  48             parse_primary_expression <cycle 1> [91]
+-----------------------------------------------
+                0.00    0.00       2/47          df_close [192]
+                0.00    0.00       3/47          reset_palette [282]
+                0.00    0.00      42/47          temp_at [119]
+[93]     0.0    0.00    0.00      47         free_at [93]
+                0.00    0.00      40/85          gpfree_string [81]
+-----------------------------------------------
+                                  46             accept_exclusive_OR_expression <cycle 1> [98]
+[94]     0.0    0.00    0.00      46         accept_AND_expression <cycle 1> [94]
+                0.00    0.00      46/46          parse_AND_expression [105]
+                                  46             accept_equality_expression <cycle 1> [97]
+-----------------------------------------------
+                                  46             accept_bitshift_expression <cycle 1> [96]
+[95]     0.0    0.00    0.00      46         accept_additive_expression <cycle 1> [95]
+                0.00    0.00      46/46          parse_additive_expression [106]
+                                  46             accept_multiplicative_expression <cycle 1> [102]
+-----------------------------------------------
+                                  46             accept_relational_expression <cycle 1> [103]
+[96]     0.0    0.00    0.00      46         accept_bitshift_expression <cycle 1> [96]
+                0.00    0.00      46/46          parse_bitshift_expression [108]
+                                  46             accept_additive_expression <cycle 1> [95]
+-----------------------------------------------
+                                  46             accept_AND_expression <cycle 1> [94]
+[97]     0.0    0.00    0.00      46         accept_equality_expression <cycle 1> [97]
+                0.00    0.00      46/46          parse_equality_expression [110]
+                                  46             accept_relational_expression <cycle 1> [103]
+-----------------------------------------------
+                                  46             accept_inclusive_OR_expression <cycle 1> [99]
+[98]     0.0    0.00    0.00      46         accept_exclusive_OR_expression <cycle 1> [98]
+                0.00    0.00      46/46          parse_exclusive_OR_expression [111]
+                                  46             accept_AND_expression <cycle 1> [94]
+-----------------------------------------------
+                                  46             accept_logical_AND_expression <cycle 1> [100]
+[99]     0.0    0.00    0.00      46         accept_inclusive_OR_expression <cycle 1> [99]
+                0.00    0.00      46/46          parse_inclusive_OR_expression [113]
+                                  46             accept_exclusive_OR_expression <cycle 1> [98]
+-----------------------------------------------
+                                  46             accept_logical_OR_expression <cycle 1> [101]
+[100]    0.0    0.00    0.00      46         accept_logical_AND_expression <cycle 1> [100]
+                0.00    0.00      46/46          parse_logical_AND_expression [114]
+                                  46             accept_inclusive_OR_expression <cycle 1> [99]
+-----------------------------------------------
+                                  46             parse_expression <cycle 1> [112]
+[101]    0.0    0.00    0.00      46         accept_logical_OR_expression <cycle 1> [101]
+                0.00    0.00      46/46          parse_logical_OR_expression [115]
+                                  46             accept_logical_AND_expression <cycle 1> [100]
+-----------------------------------------------
+                                  46             accept_additive_expression <cycle 1> [95]
+[102]    0.0    0.00    0.00      46         accept_multiplicative_expression <cycle 1> [102]
+                                  46             parse_multiplicative_expression <cycle 1> [116]
+                                  46             parse_unary_expression <cycle 1> [92]
+-----------------------------------------------
+                                  46             accept_equality_expression <cycle 1> [97]
+[103]    0.0    0.00    0.00      46         accept_relational_expression <cycle 1> [103]
+                0.00    0.00      46/46          parse_relational_expression [117]
+                                  46             accept_bitshift_expression <cycle 1> [96]
+-----------------------------------------------
+                0.00    0.00      46/46          parse_primary_expression <cycle 1> [91]
+[104]    0.0    0.00    0.00      46         isanumber [104]
+-----------------------------------------------
+                0.00    0.00      46/46          accept_AND_expression <cycle 1> [94]
+[105]    0.0    0.00    0.00      46         parse_AND_expression [105]
+                0.00    0.00      46/1954        equals [72]
+-----------------------------------------------
+                0.00    0.00      46/46          accept_additive_expression <cycle 1> [95]
+[106]    0.0    0.00    0.00      46         parse_additive_expression [106]
+                0.00    0.00     112/1954        equals [72]
+-----------------------------------------------
+                0.00    0.00      46/46          parse_expression <cycle 1> [112]
+[107]    0.0    0.00    0.00      46         parse_assignment_expression [107]
+                0.00    0.00      46/90          isletter [80]
+                0.00    0.00       6/1954        equals [72]
+-----------------------------------------------
+                0.00    0.00      46/46          accept_bitshift_expression <cycle 1> [96]
+[108]    0.0    0.00    0.00      46         parse_bitshift_expression [108]
+                0.00    0.00      92/1954        equals [72]
+-----------------------------------------------
+                0.00    0.00      46/46          parse_expression <cycle 1> [112]
+[109]    0.0    0.00    0.00      46         parse_conditional_expression [109]
+                0.00    0.00      46/1954        equals [72]
+-----------------------------------------------
+                0.00    0.00      46/46          accept_equality_expression <cycle 1> [97]
+[110]    0.0    0.00    0.00      46         parse_equality_expression [110]
+                0.00    0.00     184/1954        equals [72]
+-----------------------------------------------
+                0.00    0.00      46/46          accept_exclusive_OR_expression <cycle 1> [98]
+[111]    0.0    0.00    0.00      46         parse_exclusive_OR_expression [111]
+                0.00    0.00      46/1954        equals [72]
+-----------------------------------------------
+                                   2             parse_primary_expression <cycle 1> [91]
+                0.00    0.00      44/44          temp_at [119]
+[112]    0.0    0.00    0.00      46         parse_expression <cycle 1> [112]
+                0.00    0.00      46/46          parse_assignment_expression [107]
+                0.00    0.00      46/46          parse_conditional_expression [109]
+                                  46             accept_logical_OR_expression <cycle 1> [101]
+-----------------------------------------------
+                0.00    0.00      46/46          accept_inclusive_OR_expression <cycle 1> [99]
+[113]    0.0    0.00    0.00      46         parse_inclusive_OR_expression [113]
+                0.00    0.00      46/1954        equals [72]
+-----------------------------------------------
+                0.00    0.00      46/46          accept_logical_AND_expression <cycle 1> [100]
+[114]    0.0    0.00    0.00      46         parse_logical_AND_expression [114]
+                0.00    0.00      46/1954        equals [72]
+-----------------------------------------------
+                0.00    0.00      46/46          accept_logical_OR_expression <cycle 1> [101]
+[115]    0.0    0.00    0.00      46         parse_logical_OR_expression [115]
+                0.00    0.00      46/1954        equals [72]
+-----------------------------------------------
+                                  46             accept_multiplicative_expression <cycle 1> [102]
+[116]    0.0    0.00    0.00      46         parse_multiplicative_expression <cycle 1> [116]
+                0.00    0.00     142/1954        equals [72]
+                0.00    0.00       2/48          add_action [89]
+                                   2             parse_unary_expression <cycle 1> [92]
+-----------------------------------------------
+                0.00    0.00      46/46          accept_relational_expression <cycle 1> [103]
+[117]    0.0    0.00    0.00      46         parse_relational_expression [117]
+                0.00    0.00     184/1954        equals [72]
+-----------------------------------------------
+                0.00    0.00       1/45          SVG_text [240]
+                0.00    0.00       2/45          SVG_linewidth [135]
+                0.00    0.00      12/45          SVG_layer [132]
+                0.00    0.00      30/45          SVG_linetype [134]
+[118]    0.0    0.00    0.00      45         SVG_GroupClose [118]
+                0.00    0.00      45/118         SVG_GroupFilledClose [78]
+-----------------------------------------------
+                0.00    0.00       2/44          perm_at [225]
+                0.00    0.00       6/44          string_or_express [44]
+                0.00    0.00      36/44          const_express [31]
+[119]    0.0    0.00    0.00      44         temp_at [119]
+                0.00    0.00      44/222         gp_alloc [75]
+                0.00    0.00      44/44          parse_expression <cycle 1> [112]
+                0.00    0.00      42/47          free_at [93]
+-----------------------------------------------
+                0.00    0.00      39/39          set_gpval_axis_sth_double [54]
+[120]    0.0    0.00    0.00      39         axis_name [120]
+-----------------------------------------------
+                0.00    0.00      38/38          SVG_move [123]
+[121]    0.0    0.00    0.00      38         SVG_MoveForced [121]
+                0.00    0.00      38/38          SVG_PathOpen [122]
+                0.00    0.00      38/102361      SVG_AddSpaceOrNewline [71]
+-----------------------------------------------
+                0.00    0.00      38/38          SVG_MoveForced [121]
+[122]    0.0    0.00    0.00      38         SVG_PathOpen [122]
+                0.00    0.00      20/118         SVG_GroupFilledClose [78]
+-----------------------------------------------
+                0.00    0.00       2/38          plot_border [56]
+                0.00    0.00       6/38          draw_clip_line [58]
+                0.00    0.00       6/38          plot_lines [20]
+                0.00    0.00      10/38          xtick2d_callback [48]
+                0.00    0.00      14/38          ytick2d_callback [47]
+[123]    0.0    0.00    0.00      38         SVG_move [123]
+                0.00    0.00      38/38          SVG_MoveForced [121]
+-----------------------------------------------
+                0.00    0.00      38/38          parse_primary_expression <cycle 1> [91]
+[124]    0.0    0.00    0.00      38         convert [124]
+-----------------------------------------------
+                0.00    0.00       1/38          unset_timestamp [325]
+                0.00    0.00      18/38          unset_axislabel [149]
+                0.00    0.00      19/38          reset_command [62]
+[125]    0.0    0.00    0.00      38         unset_axislabel_or_title [125]
+-----------------------------------------------
+                0.00    0.00      36/36          apply_pm3dcolor [127]
+[126]    0.0    0.00    0.00      36         SVG_set_color [126]
+                0.00    0.00      24/120         SVG_Pen_RealID [77]
+                0.00    0.00       6/71          SVG_PathClose [83]
+-----------------------------------------------
+                0.00    0.00       6/36          do_key_sample [57]
+                0.00    0.00      30/36          term_apply_lp_properties [136]
+[127]    0.0    0.00    0.00      36         apply_pm3dcolor [127]
+                0.00    0.00      36/36          SVG_set_color [126]
+-----------------------------------------------
+                0.00    0.00      18/36          unset_tics [152]
+                0.00    0.00      18/36          reset_command [62]
+[128]    0.0    0.00    0.00      36         free_marklist [128]
+-----------------------------------------------
+                0.00    0.00      36/36          scanner [167]
+[129]    0.0    0.00    0.00      36         get_num [129]
+-----------------------------------------------
+                0.00    0.00       1/34          init_terminal [267]
+                0.00    0.00      10/34          prepare_call [275]
+                0.00    0.00      10/34          lf_pop [178]
+                0.00    0.00      13/34          fill_gpval_string [85]
+[130]    0.0    0.00    0.00      34         Gstring [130]
+-----------------------------------------------
+                0.00    0.00       1/33          SVG_graphics [235]
+                0.00    0.00       2/33          SVG_linewidth [135]
+                0.00    0.00      30/33          SVG_linetype [134]
+[131]    0.0    0.00    0.00      33         SVG_GroupOpen [131]
+                0.00    0.00      66/120         SVG_Pen_RealID [77]
+                0.00    0.00      33/118         SVG_GroupFilledClose [78]
+-----------------------------------------------
+                0.00    0.00       1/33          term_start_plot [294]
+                0.00    0.00       1/33          term_end_plot [291]
+                0.00    0.00       4/33          plot_border [56]
+                0.00    0.00      12/33          do_key_sample [57]
+                0.00    0.00      15/33          do_plot [19]
+[132]    0.0    0.00    0.00      33         SVG_layer [132]
+                0.00    0.00      12/45          SVG_GroupClose [118]
+                0.00    0.00      12/71          SVG_PathClose [83]
+-----------------------------------------------
+                0.00    0.00      30/30          term_apply_lp_properties [136]
+[133]    0.0    0.00    0.00      30         SVG_dashtype [133]
+                0.00    0.00      30/120         SVG_Pen_RealID [77]
+-----------------------------------------------
+                0.00    0.00      30/30          term_apply_lp_properties [136]
+[134]    0.0    0.00    0.00      30         SVG_linetype [134]
+                0.00    0.00      30/45          SVG_GroupClose [118]
+                0.00    0.00      30/71          SVG_PathClose [83]
+                0.00    0.00      30/33          SVG_GroupOpen [131]
+-----------------------------------------------
+                0.00    0.00      30/30          term_apply_lp_properties [136]
+[135]    0.0    0.00    0.00      30         SVG_linewidth [135]
+                0.00    0.00       2/71          SVG_PathClose [83]
+                0.00    0.00       2/33          SVG_GroupOpen [131]
+                0.00    0.00       2/45          SVG_GroupClose [118]
+-----------------------------------------------
+                0.00    0.00       1/30          place_grid [46]
+                0.00    0.00       1/30          place_parallel_axes [228]
+                0.00    0.00       2/30          place_arrows [226]
+                0.00    0.00       2/30          plot_border [56]
+                0.00    0.00       5/30          xtick2d_callback [48]
+                0.00    0.00       6/30          do_key_sample [57]
+                0.00    0.00       6/30          do_plot [19]
+                0.00    0.00       7/30          ytick2d_callback [47]
+[136]    0.0    0.00    0.00      30         term_apply_lp_properties [136]
+                0.00    0.00      30/30          SVG_linewidth [135]
+                0.00    0.00      30/30          SVG_linetype [134]
+                0.00    0.00      30/30          SVG_dashtype [133]
+                0.00    0.00      30/36          apply_pm3dcolor [127]
+-----------------------------------------------
+                0.00    0.00      24/24          enhanced_recursion [172]
+[137]    0.0    0.00    0.00      24         ENHsvg_FLUSH [137]
+-----------------------------------------------
+                0.00    0.00       6/24          do_key_sample [57]
+                0.00    0.00      18/24          write_multiline [155]
+[138]    0.0    0.00    0.00      24         SVG_justify_text [138]
+-----------------------------------------------
+                0.00    0.00      10/22          set_command [34]
+                0.00    0.00      12/22          eval_plots [6]
+[139]    0.0    0.00    0.00      22         forever_iteration [139]
+-----------------------------------------------
+                0.00    0.00       2/20          parse_primary_expression <cycle 1> [91]
+                0.00    0.00       6/20          string_or_express [44]
+                0.00    0.00      12/20          plot_option_using [43]
+[140]    0.0    0.00    0.00      20         isstring [140]
+-----------------------------------------------
+                0.00    0.00      19/19          gen_tics [41]
+[141]    0.0    0.00    0.00      19         gprintf [141]
+                0.00    0.00      19/19          safe_strncpy [142]
+-----------------------------------------------
+                0.00    0.00      19/19          gprintf [141]
+[142]    0.0    0.00    0.00      19         safe_strncpy [142]
+-----------------------------------------------
+                0.00    0.00      18/18          write_multiline [155]
+[143]    0.0    0.00    0.00      18         ENHsvg_put_text [143]
+                0.00    0.00      18/227         gp_strdup [74]
+                0.00    0.00      18/18          SVG_put_text [145]
+                0.00    0.00      12/12          enhanced_recursion [172]
+-----------------------------------------------
+                0.00    0.00       1/18          prepare_call [275]
+                0.00    0.00       1/18          load_file [14]
+                0.00    0.00       1/18          lf_pop [178]
+                0.00    0.00      15/18          fill_gpval_integer [163]
+[144]    0.0    0.00    0.00      18         Ginteger [144]
+-----------------------------------------------
+                0.00    0.00      18/18          ENHsvg_put_text [143]
+[145]    0.0    0.00    0.00      18         SVG_put_text [145]
+                0.00    0.00      18/71          SVG_PathClose [83]
+-----------------------------------------------
+                0.00    0.00       6/18          eval_plots [6]
+                0.00    0.00      12/18          command [2]
+[146]    0.0    0.00    0.00      18         is_definition [146]
+                0.00    0.00      35/90          isletter [80]
+                0.00    0.00      35/1954        equals [72]
+-----------------------------------------------
+                0.00    0.00      18/18          write_multiline [155]
+[147]    0.0    0.00    0.00      18         on_page [147]
+-----------------------------------------------
+                0.00    0.00      18/18          reset_command [62]
+[148]    0.0    0.00    0.00      18         reset_logscale [148]
+-----------------------------------------------
+                0.00    0.00      18/18          reset_command [62]
+[149]    0.0    0.00    0.00      18         unset_axislabel [149]
+                0.00    0.00      18/38          unset_axislabel_or_title [125]
+-----------------------------------------------
+                0.00    0.00      18/18          reset_command [62]
+[150]    0.0    0.00    0.00      18         unset_minitics [150]
+-----------------------------------------------
+                0.00    0.00      18/18          reset_command [62]
+[151]    0.0    0.00    0.00      18         unset_range [151]
+-----------------------------------------------
+                0.00    0.00      18/18          reset_command [62]
+[152]    0.0    0.00    0.00      18         unset_tics [152]
+                0.00    0.00      18/36          free_marklist [128]
+-----------------------------------------------
+                0.00    0.00      18/18          reset_command [62]
+[153]    0.0    0.00    0.00      18         unset_timedata [153]
+-----------------------------------------------
+                0.00    0.00      18/18          reset_command [62]
+[154]    0.0    0.00    0.00      18         unset_zeroaxis [154]
+-----------------------------------------------
+                0.00    0.00       5/18          xtick2d_callback [48]
+                0.00    0.00       6/18          do_key_sample [57]
+                0.00    0.00       7/18          ytick2d_callback [47]
+[155]    0.0    0.00    0.00      18         write_multiline [155]
+                0.00    0.00      18/24          SVG_justify_text [138]
+                0.00    0.00      18/18          on_page [147]
+                0.00    0.00      18/18          ENHsvg_put_text [143]
+-----------------------------------------------
+                0.00    0.00       6/16          eval_plots [6]
+                0.00    0.00      10/16          set_command [34]
+[156]    0.0    0.00    0.00      16         check_for_iteration [156]
+                0.00    0.00      16/1954        equals [72]
+-----------------------------------------------
+                0.00    0.00       6/16          eval_plots [6]
+                0.00    0.00      10/16          set_command [34]
+[157]    0.0    0.00    0.00      16         cleanup_iteration [157]
+-----------------------------------------------
+                0.00    0.00       6/16          eval_plots [6]
+                0.00    0.00      10/16          set_command [34]
+[158]    0.0    0.00    0.00      16         empty_iteration [158]
+-----------------------------------------------
+                0.00    0.00       6/16          get_style [196]
+                0.00    0.00      10/16          set_command [34]
+[159]    0.0    0.00    0.00      16         lookup_table [159]
+                0.00    0.00     482/1217        almost_equals [73]
+-----------------------------------------------
+                0.00    0.00       6/16          eval_plots [6]
+                0.00    0.00      10/16          set_command [34]
+[160]    0.0    0.00    0.00      16         next_iteration [160]
+-----------------------------------------------
+                0.00    0.00      15/15          estimate_strlen [162]
+[161]    0.0    0.00    0.00      15         ENHest_put_text [161]
+                0.00    0.00       1/83          gp_realloc [82]
+-----------------------------------------------
+                0.00    0.00       6/15          find_maxl_keys [257]
+                0.00    0.00       9/15          label_width [177]
+[162]    0.0    0.00    0.00      15         estimate_strlen [162]
+                0.00    0.00      15/15          ENHest_put_text [161]
+-----------------------------------------------
+                0.00    0.00       7/15          update_plot_bounds [328]
+                0.00    0.00       8/15          update_gpval_variables [50]
+[163]    0.0    0.00    0.00      15         fill_gpval_integer [163]
+                0.00    0.00      15/167         add_udv_by_name [76]
+                0.00    0.00      15/18          Ginteger [144]
+-----------------------------------------------
+                0.00    0.00       1/14          SVG_init [236]
+                0.00    0.00      13/14          SVG_set_font [169]
+[164]    0.0    0.00    0.00      14         SVG_SetFont [164]
+-----------------------------------------------
+                0.00    0.00      14/14          string_expand_macros [168]
+[165]    0.0    0.00    0.00      14         expand_1level_macros [165]
+-----------------------------------------------
+                0.00    0.00       2/14          boundary [49]
+                0.00    0.00       5/14          xtick2d_callback [48]
+                0.00    0.00       7/14          ytick2d_callback [47]
+[166]    0.0    0.00    0.00      14         map_position_r [166]
+-----------------------------------------------
+                0.00    0.00       3/14          load_file [14]
+                0.00    0.00      11/14          do_line [3]
+[167]    0.0    0.00    0.00      14         scanner [167]
+                0.00    0.00      36/36          get_num [129]
+-----------------------------------------------
+                0.00    0.00       3/14          load_file [14]
+                0.00    0.00      11/14          do_line [3]
+[168]    0.0    0.00    0.00      14         string_expand_macros [168]
+                0.00    0.00      14/14          expand_1level_macros [165]
+-----------------------------------------------
+                0.00    0.00       1/13          SVG_options [238]
+                0.00    0.00      12/13          ignore_enhanced [90]
+[169]    0.0    0.00    0.00      13         SVG_set_font [169]
+                0.00    0.00      13/227         gp_strdup [74]
+                0.00    0.00      13/14          SVG_SetFont [164]
+-----------------------------------------------
+                0.00    0.00      12/12          clip_line [189]
+[170]    0.0    0.00    0.00      12         clip_point [170]
+-----------------------------------------------
+                0.00    0.00      12/12          plot_lines [20]
+[171]    0.0    0.00    0.00      12         edge_intersect [171]
+-----------------------------------------------
+                0.00    0.00      12/12          ENHsvg_put_text [143]
+[172]    0.0    0.00    0.00      12         enhanced_recursion [172]
+                0.00    0.00      55/55          ENHsvg_OPEN [87]
+                0.00    0.00      55/103         ENHsvg_writec [79]
+                0.00    0.00      24/24          ENHsvg_FLUSH [137]
+-----------------------------------------------
+                0.00    0.00       1/12          init_constants [63]
+                0.00    0.00      11/12          lf_pop [178]
+[173]    0.0    0.00    0.00      12         get_udv_by_name [173]
+-----------------------------------------------
+                0.00    0.00      11/11          do_line [3]
+[174]    0.0    0.00    0.00      11         check_for_mouse_events [174]
+-----------------------------------------------
+                0.00    0.00      11/11          eval_plots [6]
+[175]    0.0    0.00    0.00      11         load_linetype [175]
+-----------------------------------------------
+                0.00    0.00      11/11          command [2]
+[176]    0.0    0.00    0.00      11         lookup_ftable [176]
+                0.00    0.00     319/1217        almost_equals [73]
+-----------------------------------------------
+                0.00    0.00       2/9           boundary [49]
+                0.00    0.00       7/9           widest_tic_callback [186]
+[177]    0.0    0.00    0.00       9         label_width [177]
+                0.00    0.00       9/222         gp_alloc [75]
+                0.00    0.00       9/15          estimate_strlen [162]
+-----------------------------------------------
+                0.00    0.00       1/9           load_file [14]
+                0.00    0.00       8/9           do_string_and_free [12]
+[178]    0.0    0.00    0.00       9         lf_pop [178]
+                0.00    0.00      11/12          get_udv_by_name [173]
+                0.00    0.00      10/85          gpfree_string [81]
+                0.00    0.00      10/227         gp_strdup [74]
+                0.00    0.00      10/34          Gstring [130]
+                0.00    0.00       9/167         add_udv_by_name [76]
+                0.00    0.00       1/18          Ginteger [144]
+-----------------------------------------------
+                0.00    0.00       1/9           load_file [14]
+                0.00    0.00       8/9           do_string_and_free [12]
+[179]    0.0    0.00    0.00       9         lf_push [179]
+                0.00    0.00      18/222         gp_alloc [75]
+                0.00    0.00       9/227         gp_strdup [74]
+-----------------------------------------------
+                0.00    0.00       8/8           do_string_and_free [12]
+[180]    0.0    0.00    0.00       8         display_ipc_commands [180]
+-----------------------------------------------
+                0.00    0.00       1/7           define [60]
+                0.00    0.00       6/7           parse_primary_expression <cycle 1> [91]
+[181]    0.0    0.00    0.00       7         add_udv [181]
+                0.00    0.00       7/7           copy_str [182]
+                0.00    0.00       7/167         add_udv_by_name [76]
+-----------------------------------------------
+                0.00    0.00       7/7           add_udv [181]
+[182]    0.0    0.00    0.00       7         copy_str [182]
+-----------------------------------------------
+                0.00    0.00       1/7           set_output [59]
+                0.00    0.00       6/7           df_open [42]
+[183]    0.0    0.00    0.00       7         gp_expand_tilde [183]
+-----------------------------------------------
+                0.00    0.00       1/7           main [1]
+                0.00    0.00       6/7           df_open [42]
+[184]    0.0    0.00    0.00       7         loadpath_fopen [184]
+-----------------------------------------------
+                0.00    0.00       7/7           eval_plots [6]
+[185]    0.0    0.00    0.00       7         m_capture [185]
+                0.00    0.00       7/83          gp_realloc [82]
+-----------------------------------------------
+                0.00    0.00       7/7           gen_tics [41]
+[186]    0.0    0.00    0.00       7         widest_tic_callback [186]
+                0.00    0.00       7/9           label_width [177]
+-----------------------------------------------
+                0.00    0.00       6/6           do_plot [19]
+[187]    0.0    0.00    0.00       6         SVG_hypertext [187]
+                0.00    0.00      48/103         ENHsvg_writec [79]
+                0.00    0.00       6/222         gp_alloc [75]
+                0.00    0.00       6/227         gp_strdup [74]
+-----------------------------------------------
+                0.00    0.00       6/6           df_open [42]
+[188]    0.0    0.00    0.00       6         clear_df_column_headers [188]
+-----------------------------------------------
+                0.00    0.00       6/6           draw_clip_line [58]
+[189]    0.0    0.00    0.00       6         clip_line [189]
+                0.00    0.00      12/12          clip_point [170]
+-----------------------------------------------
+                0.00    0.00       6/6           eval_plots [6]
+[190]    0.0    0.00    0.00       6         cp_alloc [190]
+                0.00    0.00      12/222         gp_alloc [75]
+                0.00    0.00       6/6           default_arrow_style [191]
+-----------------------------------------------
+                0.00    0.00       6/6           cp_alloc [190]
+[191]    0.0    0.00    0.00       6         default_arrow_style [191]
+-----------------------------------------------
+                0.00    0.00       6/6           get_data [7]
+[192]    0.0    0.00    0.00       6         df_close [192]
+                0.00    0.00       2/47          free_at [93]
+-----------------------------------------------
+                0.00    0.00       6/6           get_data [7]
+[193]    0.0    0.00    0.00       6         df_set_key_title [193]
+-----------------------------------------------
+                0.00    0.00       6/6           eval_plots [6]
+[194]    0.0    0.00    0.00       6         df_set_plot_mode [194]
+-----------------------------------------------
+                0.00    0.00       6/6           execute_at [17]
+[195]    0.0    0.00    0.00       6         f_push [195]
+                0.00    0.00       6/4200042     push [66]
+-----------------------------------------------
+                0.00    0.00       6/6           eval_plots [6]
+[196]    0.0    0.00    0.00       6         get_style [196]
+                0.00    0.00       6/16          lookup_table [159]
+-----------------------------------------------
+                0.00    0.00       6/6           df_open [42]
+[197]    0.0    0.00    0.00       6         initialize_use_spec [197]
+-----------------------------------------------
+                0.00    0.00       1/5           init_session [11]
+                0.00    0.00       4/5           unset_fit [305]
+[198]    0.0    0.00    0.00       5         del_udv_by_name [198]
+-----------------------------------------------
+                0.00    0.00       2/4           newpath [223]
+                0.00    0.00       2/4           closepath [217]
+[199]    0.0    0.00    0.00       4         SVG_path [199]
+                0.00    0.00       2/71          SVG_PathClose [83]
+-----------------------------------------------
+                0.00    0.00       2/4           axis_output_tics [45]
+                0.00    0.00       2/4           boundary [49]
+[200]    0.0    0.00    0.00       4         SVG_text_angle [200]
+-----------------------------------------------
+                0.00    0.00       4/4           do_plot [19]
+[201]    0.0    0.00    0.00       4         axis_draw_2d_zeroaxis [201]
+                0.00    0.00       4/4           axis_position_zeroaxis [202]
+-----------------------------------------------
+                0.00    0.00       4/4           axis_draw_2d_zeroaxis [201]
+[202]    0.0    0.00    0.00       4         axis_position_zeroaxis [202]
+-----------------------------------------------
+                0.00    0.00       4/4           boundary [49]
+[203]    0.0    0.00    0.00       4         axis_set_graphical_range [203]
+-----------------------------------------------
+                0.00    0.00       4/4           boundary [49]
+[204]    0.0    0.00    0.00       4         setup_tics [204]
+                0.00    0.00       2/2           make_tics [222]
+                0.00    0.00       2/2           round_outward [230]
+                0.00    0.00       2/2           copy_or_invent_formatstring [218]
+-----------------------------------------------
+                0.00    0.00       4/4           reset_command [62]
+[205]    0.0    0.00    0.00       4         unset_margin [205]
+-----------------------------------------------
+                0.00    0.00       1/3           set_output [59]
+                0.00    0.00       2/3           change_term [216]
+[206]    0.0    0.00    0.00       3         invalidate_palette [206]
+-----------------------------------------------
+                0.00    0.00       1/3           boundary [49]
+                0.00    0.00       2/3           do_plot [19]
+[207]    0.0    0.00    0.00       3         is_plot_with_colorbox [207]
+-----------------------------------------------
+                0.00    0.00       1/3           boundary [49]
+                0.00    0.00       2/3           do_plot [19]
+[208]    0.0    0.00    0.00       3         is_plot_with_palette [208]
+-----------------------------------------------
+                0.00    0.00       3/3           init_session [11]
+[209]    0.0    0.00    0.00       3         load_rcfile [209]
+                0.00    0.00       2/222         gp_alloc [75]
+-----------------------------------------------
+                0.00    0.00       3/3           do_plot [19]
+[210]    0.0    0.00    0.00       3         place_objects [210]
+-----------------------------------------------
+                0.00    0.00       2/2           eval_plots [6]
+[211]    0.0    0.00    0.00       2         axis_checked_extend_empty_range [211]
+-----------------------------------------------
+                0.00    0.00       2/2           set_cbminmax [284]
+[212]    0.0    0.00    0.00       2         axis_log_value_checked [212]
+-----------------------------------------------
+                0.00    0.00       2/2           eval_plots [6]
+[213]    0.0    0.00    0.00       2         axis_revert_and_unlog_range [213]
+                0.00    0.00       2/2           axis_revert_range [214]
+                0.00    0.00       2/2           axis_unlog_interval [215]
+-----------------------------------------------
+                0.00    0.00       2/2           axis_revert_and_unlog_range [213]
+[214]    0.0    0.00    0.00       2         axis_revert_range [214]
+-----------------------------------------------
+                0.00    0.00       2/2           axis_revert_and_unlog_range [213]
+[215]    0.0    0.00    0.00       2         axis_unlog_interval [215]
+-----------------------------------------------
+                0.00    0.00       1/2           set_term [286]
+                0.00    0.00       1/2           init_terminal [267]
+[216]    0.0    0.00    0.00       2         change_term [216]
+                0.00    0.00       2/3           invalidate_palette [206]
+-----------------------------------------------
+                0.00    0.00       2/2           plot_border [56]
+[217]    0.0    0.00    0.00       2         closepath [217]
+                0.00    0.00       2/4           SVG_path [199]
+-----------------------------------------------
+                0.00    0.00       2/2           setup_tics [204]
+[218]    0.0    0.00    0.00       2         copy_or_invent_formatstring [218]
+-----------------------------------------------
+                0.00    0.00       2/2           place_labels [227]
+[219]    0.0    0.00    0.00       2         do_pointsize [219]
+-----------------------------------------------
+                0.00    0.00       1/2           eval_plots [6]
+                0.00    0.00       1/2           unset_histogram [307]
+[220]    0.0    0.00    0.00       2         free_histlist [220]
+-----------------------------------------------
+                0.00    0.00       2/2           parse_primary_expression <cycle 1> [91]
+[221]    0.0    0.00    0.00       2         m_quote_capture [221]
+                0.00    0.00       2/83          gp_realloc [82]
+                0.00    0.00       2/56          parse_esc [86]
+-----------------------------------------------
+                0.00    0.00       2/2           setup_tics [204]
+[222]    0.0    0.00    0.00       2         make_tics [222]
+                0.00    0.00       2/2           quantize_normal_tics [229]
+-----------------------------------------------
+                0.00    0.00       2/2           plot_border [56]
+[223]    0.0    0.00    0.00       2         newpath [223]
+                0.00    0.00       2/4           SVG_path [199]
+-----------------------------------------------
+                0.00    0.00       1/2           update_gpval_variables [50]
+                0.00    0.00       1/2           init_constants [63]
+[224]    0.0    0.00    0.00       2         not_a_number [224]
+-----------------------------------------------
+                0.00    0.00       2/2           plot_option_using [43]
+[225]    0.0    0.00    0.00       2         perm_at [225]
+                0.00    0.00       2/44          temp_at [119]
+                0.00    0.00       2/83          gp_realloc [82]
+-----------------------------------------------
+                0.00    0.00       2/2           do_plot [19]
+[226]    0.0    0.00    0.00       2         place_arrows [226]
+                0.00    0.00       2/30          term_apply_lp_properties [136]
+-----------------------------------------------
+                0.00    0.00       2/2           do_plot [19]
+[227]    0.0    0.00    0.00       2         place_labels [227]
+                0.00    0.00       2/2           do_pointsize [219]
+-----------------------------------------------
+                0.00    0.00       2/2           do_plot [19]
+[228]    0.0    0.00    0.00       2         place_parallel_axes [228]
+                0.00    0.00       1/30          term_apply_lp_properties [136]
+-----------------------------------------------
+                0.00    0.00       2/2           make_tics [222]
+[229]    0.0    0.00    0.00       2         quantize_normal_tics [229]
+-----------------------------------------------
+                0.00    0.00       2/2           setup_tics [204]
+[230]    0.0    0.00    0.00       2         round_outward [230]
+-----------------------------------------------
+                0.00    0.00       1/2           unset_isosamples [308]
+                0.00    0.00       1/2           unset_samples [317]
+[231]    0.0    0.00    0.00       2         sp_free [231]
+-----------------------------------------------
+                0.00    0.00       1/2           set_terminal [287]
+                0.00    0.00       1/2           gp_exit_cleanup [262]
+[232]    0.0    0.00    0.00       2         term_reset [232]
+                0.00    0.00       1/1           SVG_reset [239]
+-----------------------------------------------
+                0.00    0.00       1/1           UpdateStatuslineWithMouseSetting [242]
+[233]    0.0    0.00    0.00       1         GetAnnotateString [233]
+                0.00    0.00       1/1           xy_format [330]
+-----------------------------------------------
+                0.00    0.00       1/1           recalc_statusline [278]
+[234]    0.0    0.00    0.00       1         MousePosToGraphPosReal [234]
+-----------------------------------------------
+                0.00    0.00       1/1           term_start_plot [294]
+[235]    0.0    0.00    0.00       1         SVG_graphics [235]
+                0.00    0.00       1/33          SVG_GroupOpen [131]
+-----------------------------------------------
+                0.00    0.00       1/1           term_initialise [292]
+[236]    0.0    0.00    0.00       1         SVG_init [236]
+                0.00    0.00       1/14          SVG_SetFont [164]
+                0.00    0.00       1/227         gp_strdup [74]
+                0.00    0.00       1/83          gp_realloc [82]
+-----------------------------------------------
+                0.00    0.00       1/1           SVG_options [238]
+[237]    0.0    0.00    0.00       1         SVG_local_reset [237]
+                0.00    0.00       1/227         gp_strdup [74]
+-----------------------------------------------
+                0.00    0.00       1/1           set_terminal [287]
+[238]    0.0    0.00    0.00       1         SVG_options [238]
+                0.00    0.00       1/1217        almost_equals [73]
+                0.00    0.00       1/1           SVG_local_reset [237]
+                0.00    0.00       1/13          SVG_set_font [169]
+-----------------------------------------------
+                0.00    0.00       1/1           term_reset [232]
+[239]    0.0    0.00    0.00       1         SVG_reset [239]
+-----------------------------------------------
+                0.00    0.00       1/1           term_end_plot [291]
+[240]    0.0    0.00    0.00       1         SVG_text [240]
+                0.00    0.00       1/45          SVG_GroupClose [118]
+                0.00    0.00       1/71          SVG_PathClose [83]
+-----------------------------------------------
+                0.00    0.00       1/1           recalc_statusline [278]
+[241]    0.0    0.00    0.00       1         UpdateStatusline [241]
+                0.00    0.00       1/1           UpdateStatuslineWithMouseSetting [242]
+-----------------------------------------------
+                0.00    0.00       1/1           UpdateStatusline [241]
+[242]    0.0    0.00    0.00       1         UpdateStatuslineWithMouseSetting [242]
+                0.00    0.00       1/1           GetAnnotateString [233]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[243]    0.0    0.00    0.00       1         X11_args [243]
+                0.00    0.00       1/222         gp_alloc [75]
+                0.00    0.00       1/1           parse_driver [271]
+-----------------------------------------------
+                0.00    0.00       1/1           do_plot [19]
+[244]    0.0    0.00    0.00       1         adjust_offsets [244]
+-----------------------------------------------
+                0.00    0.00       1/1           event_reset [253]
+[245]    0.0    0.00    0.00       1         builtin_cancel_zoom [245]
+-----------------------------------------------
+                0.00    0.00       1/1           df_unset_datafile_binary [248]
+[246]    0.0    0.00    0.00       1         clear_binary_records [246]
+-----------------------------------------------
+                0.00    0.00       1/1           unset_samples [317]
+[247]    0.0    0.00    0.00       1         cp_free [247]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[248]    0.0    0.00    0.00       1         df_unset_datafile_binary [248]
+                0.00    0.00       1/1           clear_binary_records [246]
+-----------------------------------------------
+                0.00    0.00       1/1           boundary [49]
+[249]    0.0    0.00    0.00       1         do_key_bounds [249]
+-----------------------------------------------
+                0.00    0.00       1/1           boundary [49]
+[250]    0.0    0.00    0.00       1         do_key_layout [250]
+-----------------------------------------------
+                0.00    0.00       1/1           do_plot [19]
+[251]    0.0    0.00    0.00       1         draw_key [251]
+-----------------------------------------------
+                0.00    0.00       1/1           do_plot [19]
+[252]    0.0    0.00    0.00       1         draw_titles [252]
+-----------------------------------------------
+                0.00    0.00       1/1           set_terminal [287]
+[253]    0.0    0.00    0.00       1         event_reset [253]
+                0.00    0.00       1/1           builtin_cancel_zoom [245]
+-----------------------------------------------
+                0.00    0.00       1/1           df_tokenise [10]
+[254]    0.0    0.00    0.00       1         expand_df_column [254]
+                0.00    0.00       1/83          gp_realloc [82]
+-----------------------------------------------
+                0.00    0.00       1/1           init_memory [266]
+[255]    0.0    0.00    0.00       1         extend_input_line [255]
+                0.00    0.00       1/222         gp_alloc [75]
+-----------------------------------------------
+                0.00    0.00       1/1           init_memory [266]
+[256]    0.0    0.00    0.00       1         extend_token_table [256]
+                0.00    0.00       1/222         gp_alloc [75]
+-----------------------------------------------
+                0.00    0.00       1/1           boundary [49]
+[257]    0.0    0.00    0.00       1         find_maxl_keys [257]
+                0.00    0.00      12/48          ignore_enhanced [90]
+                0.00    0.00       6/15          estimate_strlen [162]
+-----------------------------------------------
+                0.00    0.00       1/1           unset_arrowstyles [296]
+[258]    0.0    0.00    0.00       1         free_arrowstyle [258]
+-----------------------------------------------
+                0.00    0.00       1/1           update_gpval_variables [50]
+[259]    0.0    0.00    0.00       1         get_terminals_names [259]
+                0.00    0.00       2/222         gp_alloc [75]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[260]    0.0    0.00    0.00       1         get_user_env [260]
+                0.00    0.00       2/227         gp_strdup [74]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[261]    0.0    0.00    0.00       1         gp_atexit [261]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[262]    0.0    0.00    0.00       1         gp_exit_cleanup [262]
+                0.00    0.00       1/2           term_reset [232]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_palette [282]
+[263]    0.0    0.00    0.00       1         init_color [263]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[264]    0.0    0.00    0.00       1         init_fit [264]
+-----------------------------------------------
+                0.00    0.00       1/1           eval_plots [6]
+[265]    0.0    0.00    0.00       1         init_histogram [265]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[266]    0.0    0.00    0.00       1         init_memory [266]
+                0.00    0.00       1/1           extend_token_table [256]
+                0.00    0.00       1/1           extend_input_line [255]
+                0.00    0.00       1/227         gp_strdup [74]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[267]    0.0    0.00    0.00       1         init_terminal [267]
+                0.00    0.00       1/167         add_udv_by_name [76]
+                0.00    0.00       1/227         gp_strdup [74]
+                0.00    0.00       1/34          Gstring [130]
+                0.00    0.00       1/2           change_term [216]
+                0.00    0.00       1/1           qt_options [277]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[268]    0.0    0.00    0.00       1         interrupt_setup [268]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[269]    0.0    0.00    0.00       1         loadpath_handler [269]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[270]    0.0    0.00    0.00       1         locale_handler [270]
+                0.00    0.00       1/227         gp_strdup [74]
+-----------------------------------------------
+                0.00    0.00       1/1           X11_args [243]
+[271]    0.0    0.00    0.00       1         parse_driver [271]
+                0.00    0.00       2/83          gp_realloc [82]
+-----------------------------------------------
+                0.00    0.00       1/1           do_plot [19]
+[272]    0.0    0.00    0.00       1         place_histogram_titles [272]
+-----------------------------------------------
+                0.00    0.00       1/1           plot_command [4]
+[273]    0.0    0.00    0.00       1         plot_mode [273]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[274]    0.0    0.00    0.00       1         pm3d_reset [274]
+-----------------------------------------------
+                0.00    0.00       1/1           load_file [14]
+[275]    0.0    0.00    0.00       1         prepare_call [275]
+                0.00    0.00      19/227         gp_strdup [74]
+                0.00    0.00      11/167         add_udv_by_name [76]
+                0.00    0.00      10/85          gpfree_string [81]
+                0.00    0.00      10/34          Gstring [130]
+                0.00    0.00       1/18          Ginteger [144]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[276]    0.0    0.00    0.00       1         push_terminal [276]
+                0.00    0.00       2/227         gp_strdup [74]
+-----------------------------------------------
+                0.00    0.00       1/1           init_terminal [267]
+[277]    0.0    0.00    0.00       1         qt_options [277]
+                0.00    0.00       7/8           QString::~QString() [2089]
+                0.00    0.00       1/1           ensureOptionsCreated() [2098]
+                0.00    0.00       1/3           QString::QString() [2094]
+                0.00    0.00       1/1           operator+(QString const&, char const*) [2109]
+                0.00    0.00       1/1           operator+(QString const&, QString const&) [2110]
+                0.00    0.00       1/1           operator+(char const*, QString const&) [2108]
+                0.00    0.00       1/1           operator+(QString const&, char) [2111]
+                0.00    0.00       1/4           QString::operator+=(QString const&) [2091]
+                0.00    0.00       1/1           QByteArray::data() [2099]
+                0.00    0.00       1/1           QByteArray::~QByteArray() [2101]
+-----------------------------------------------
+                0.00    0.00       1/1           term_end_plot [291]
+[278]    0.0    0.00    0.00       1         recalc_statusline [278]
+                0.00    0.00       1/1           UpdateStatusline [241]
+                0.00    0.00       1/1           MousePosToGraphPosReal [234]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[279]    0.0    0.00    0.00       1         reset_colorbox [279]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[280]    0.0    0.00    0.00       1         reset_hidden3doptions [280]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[281]    0.0    0.00    0.00       1         reset_key [281]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[282]    0.0    0.00    0.00       1         reset_palette [282]
+                0.00    0.00       3/47          free_at [93]
+                0.00    0.00       1/1           init_color [263]
+-----------------------------------------------
+                0.00    0.00       1/1           eval_plots [6]
+[283]    0.0    0.00    0.00       1         save_writeback_all_axes [283]
+-----------------------------------------------
+                0.00    0.00       1/1           eval_plots [6]
+[284]    0.0    0.00    0.00       1         set_cbminmax [284]
+                0.00    0.00       2/2           axis_log_value_checked [212]
+-----------------------------------------------
+                0.00    0.00       1/1           do_plot [19]
+[285]    0.0    0.00    0.00       1         set_plot_with_palette [285]
+-----------------------------------------------
+                0.00    0.00       1/1           set_terminal [287]
+[286]    0.0    0.00    0.00       1         set_term [286]
+                0.00    0.00       1/1954        equals [72]
+                0.00    0.00       1/2           change_term [216]
+-----------------------------------------------
+                0.00    0.00       1/1           set_command [34]
+[287]    0.0    0.00    0.00       1         set_terminal [287]
+                0.00    0.00       3/1954        equals [72]
+                0.00    0.00       1/1           event_reset [253]
+                0.00    0.00       1/2           term_reset [232]
+                0.00    0.00       1/1           set_term [286]
+                0.00    0.00       1/1           SVG_options [238]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[288]    0.0    0.00    0.00       1         show_version [288]
+                0.00    0.00       1/222         gp_alloc [75]
+                0.00    0.00       1/83          gp_realloc [82]
+-----------------------------------------------
+                0.00    0.00       1/1           plotrequest [5]
+[289]    0.0    0.00    0.00       1         splot_map_deactivate [289]
+-----------------------------------------------
+                0.00    0.00       1/1           term_set_output [293]
+[290]    0.0    0.00    0.00       1         term_close_output [290]
+-----------------------------------------------
+                0.00    0.00       1/1           do_plot [19]
+[291]    0.0    0.00    0.00       1         term_end_plot [291]
+                0.00    0.00       1/33          SVG_layer [132]
+                0.00    0.00       1/1           SVG_text [240]
+                0.00    0.00       1/1           update_ruler [329]
+                0.00    0.00       1/1           recalc_statusline [278]
+-----------------------------------------------
+                0.00    0.00       1/1           do_plot [19]
+[292]    0.0    0.00    0.00       1         term_initialise [292]
+                0.00    0.00       1/1           SVG_init [236]
+-----------------------------------------------
+                0.00    0.00       1/1           set_output [59]
+[293]    0.0    0.00    0.00       1         term_set_output [293]
+                0.00    0.00       1/1           term_close_output [290]
+-----------------------------------------------
+                0.00    0.00       1/1           do_plot [19]
+[294]    0.0    0.00    0.00       1         term_start_plot [294]
+                0.00    0.00       1/1           SVG_graphics [235]
+                0.00    0.00       1/33          SVG_layer [132]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[295]    0.0    0.00    0.00       1         unset_angles [295]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[296]    0.0    0.00    0.00       1         unset_arrowstyles [296]
+                0.00    0.00       1/1           free_arrowstyle [258]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[297]    0.0    0.00    0.00       1         unset_boxplot [297]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[298]    0.0    0.00    0.00       1         unset_boxwidth [298]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[299]    0.0    0.00    0.00       1         unset_cntrlabel [299]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[300]    0.0    0.00    0.00       1         unset_cntrparam [300]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[301]    0.0    0.00    0.00       1         unset_contour [301]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[302]    0.0    0.00    0.00       1         unset_dgrid3d [302]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[303]    0.0    0.00    0.00       1         unset_dummy [303]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[304]    0.0    0.00    0.00       1         unset_fillstyle [304]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[305]    0.0    0.00    0.00       1         unset_fit [305]
+                0.00    0.00       4/5           del_udv_by_name [198]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[306]    0.0    0.00    0.00       1         unset_grid [306]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[307]    0.0    0.00    0.00       1         unset_histogram [307]
+                0.00    0.00       1/2           free_histlist [220]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[308]    0.0    0.00    0.00       1         unset_isosamples [308]
+                0.00    0.00       1/2           sp_free [231]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[309]    0.0    0.00    0.00       1         unset_mapping [309]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[310]    0.0    0.00    0.00       1         unset_missing [310]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[311]    0.0    0.00    0.00       1         unset_offsets [311]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[312]    0.0    0.00    0.00       1         unset_origin [312]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[313]    0.0    0.00    0.00       1         unset_parametric [313]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[314]    0.0    0.00    0.00       1         unset_pointintervalbox [314]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[315]    0.0    0.00    0.00       1         unset_pointsize [315]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[316]    0.0    0.00    0.00       1         unset_polar [316]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[317]    0.0    0.00    0.00       1         unset_samples [317]
+                0.00    0.00       1/1           cp_free [247]
+                0.00    0.00       1/2           sp_free [231]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[318]    0.0    0.00    0.00       1         unset_size [318]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[319]    0.0    0.00    0.00       1         unset_style_circle [319]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[320]    0.0    0.00    0.00       1         unset_style_ellipse [320]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[321]    0.0    0.00    0.00       1         unset_style_rectangle [321]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[322]    0.0    0.00    0.00       1         unset_textbox_style [322]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[323]    0.0    0.00    0.00       1         unset_ticslevel [323]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[324]    0.0    0.00    0.00       1         unset_timefmt [324]
+                0.00    0.00       1/227         gp_strdup [74]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[325]    0.0    0.00    0.00       1         unset_timestamp [325]
+                0.00    0.00       1/38          unset_axislabel_or_title [125]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[326]    0.0    0.00    0.00       1         unset_view [326]
+-----------------------------------------------
+                0.00    0.00       1/1           reset_command [62]
+[327]    0.0    0.00    0.00       1         unset_zero [327]
+-----------------------------------------------
+                0.00    0.00       1/1           update_gpval_variables [50]
+[328]    0.0    0.00    0.00       1         update_plot_bounds [328]
+                0.00    0.00       7/15          fill_gpval_integer [163]
+-----------------------------------------------
+                0.00    0.00       1/1           term_end_plot [291]
+[329]    0.0    0.00    0.00       1         update_ruler [329]
+-----------------------------------------------
+                0.00    0.00       1/1           GetAnnotateString [233]
+[330]    0.0    0.00    0.00       1         xy_format [330]
+-----------------------------------------------
+                0.00    0.00       1/9           QByteArray::~QByteArray() [2101]
+                0.00    0.00       8/9           QString::~QString() [2089]
+[2088]   0.0    0.00    0.00       9         QBasicAtomicInt::deref() [2088]
+-----------------------------------------------
+                0.00    0.00       1/8           operator+(QString const&, char const*) [2109]
+                0.00    0.00       7/8           qt_options [277]
+[2089]   0.0    0.00    0.00       8         QString::~QString() [2089]
+                0.00    0.00       8/9           QBasicAtomicInt::deref() [2088]
+-----------------------------------------------
+                0.00    0.00       3/6           QString::QString(QString const&) [2093]
+                0.00    0.00       3/6           QString::QString() [2094]
+[2090]   0.0    0.00    0.00       6         QBasicAtomicInt::ref() [2090]
+-----------------------------------------------
+                0.00    0.00       1/4           qt_options [277]
+                0.00    0.00       1/4           operator+(QString const&, QString const&) [2110]
+                0.00    0.00       1/4           operator+(QString const&, char const*) [2109]
+                0.00    0.00       1/4           operator+(char const*, QString const&) [2108]
+[2091]   0.0    0.00    0.00       4         QString::operator+=(QString const&) [2091]
+-----------------------------------------------
+                0.00    0.00       3/3           QString::QString(QString const&) [2093]
+[2092]   0.0    0.00    0.00       3         qt_noop() [2092]
+-----------------------------------------------
+                0.00    0.00       1/3           operator+(QString const&, QString const&) [2110]
+                0.00    0.00       1/3           operator+(QString const&, char const*) [2109]
+                0.00    0.00       1/3           operator+(QString const&, char) [2111]
+[2093]   0.0    0.00    0.00       3         QString::QString(QString const&) [2093]
+                0.00    0.00       3/3           qt_noop() [2092]
+                0.00    0.00       3/6           QBasicAtomicInt::ref() [2090]
+-----------------------------------------------
+                0.00    0.00       1/3           qt_options [277]
+                0.00    0.00       2/3           QtOption::QtOption() [2107]
+[2094]   0.0    0.00    0.00       3         QString::QString() [2094]
+                0.00    0.00       3/6           QBasicAtomicInt::ref() [2090]
+-----------------------------------------------
+                0.00    0.00       1/2           QByteArray::detach() [2100]
+                0.00    0.00       1/2           QString::operator+=(QChar) [2106]
+[2095]   0.0    0.00    0.00       2         QBasicAtomicInt::operator!=(int) const [2095]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [2242]
+[2096]   0.0    0.00    0.00       1         _GLOBAL__sub_I__Z18qt_encodingToCodec15set_encoding_id [2096]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [2097]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__Z18qt_encodingToCodec15set_encoding_id [2096]
+[2097]   0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [2097]
+                0.00    0.00       1/1           QColor::QColor(int, int, int, int) [2103]
+-----------------------------------------------
+                0.00    0.00       1/1           qt_options [277]
+[2098]   0.0    0.00    0.00       1         ensureOptionsCreated() [2098]
+                0.00    0.00       1/1           QtOption::QtOption() [2107]
+-----------------------------------------------
+                0.00    0.00       1/1           qt_options [277]
+[2099]   0.0    0.00    0.00       1         QByteArray::data() [2099]
+                0.00    0.00       1/1           QByteArray::detach() [2100]
+-----------------------------------------------
+                0.00    0.00       1/1           QByteArray::data() [2099]
+[2100]   0.0    0.00    0.00       1         QByteArray::detach() [2100]
+                0.00    0.00       1/2           QBasicAtomicInt::operator!=(int) const [2095]
+-----------------------------------------------
+                0.00    0.00       1/1           qt_options [277]
+[2101]   0.0    0.00    0.00       1         QByteArray::~QByteArray() [2101]
+                0.00    0.00       1/9           QBasicAtomicInt::deref() [2088]
+-----------------------------------------------
+                0.00    0.00       1/1           QString::operator+=(QChar) [2106]
+[2102]   0.0    0.00    0.00       1         QChar::unicode() [2102]
+-----------------------------------------------
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [2097]
+[2103]   0.0    0.00    0.00       1         QColor::QColor(int, int, int, int) [2103]
+-----------------------------------------------
+                0.00    0.00       1/1           QtOption::QtOption() [2107]
+[2104]   0.0    0.00    0.00       1         QPoint::QPoint() [2104]
+-----------------------------------------------
+                0.00    0.00       1/1           QtOption::QtOption() [2107]
+[2105]   0.0    0.00    0.00       1         QString::QString(char const*) [2105]
+-----------------------------------------------
+                0.00    0.00       1/1           operator+(QString const&, char) [2111]
+[2106]   0.0    0.00    0.00       1         QString::operator+=(QChar) [2106]
+                0.00    0.00       1/2           QBasicAtomicInt::operator!=(int) const [2095]
+                0.00    0.00       1/1           QChar::unicode() [2102]
+-----------------------------------------------
+                0.00    0.00       1/1           ensureOptionsCreated() [2098]
+[2107]   0.0    0.00    0.00       1         QtOption::QtOption() [2107]
+                0.00    0.00       2/3           QString::QString() [2094]
+                0.00    0.00       1/1           QString::QString(char const*) [2105]
+                0.00    0.00       1/1           QPoint::QPoint() [2104]
+-----------------------------------------------
+                0.00    0.00       1/1           qt_options [277]
+[2108]   0.0    0.00    0.00       1         operator+(char const*, QString const&) [2108]
+                0.00    0.00       1/4           QString::operator+=(QString const&) [2091]
+-----------------------------------------------
+                0.00    0.00       1/1           qt_options [277]
+[2109]   0.0    0.00    0.00       1         operator+(QString const&, char const*) [2109]
+                0.00    0.00       1/3           QString::QString(QString const&) [2093]
+                0.00    0.00       1/4           QString::operator+=(QString const&) [2091]
+                0.00    0.00       1/8           QString::~QString() [2089]
+-----------------------------------------------
+                0.00    0.00       1/1           qt_options [277]
+[2110]   0.0    0.00    0.00       1         operator+(QString const&, QString const&) [2110]
+                0.00    0.00       1/3           QString::QString(QString const&) [2093]
+                0.00    0.00       1/4           QString::operator+=(QString const&) [2091]
+-----------------------------------------------
+                0.00    0.00       1/1           qt_options [277]
+[2111]   0.0    0.00    0.00       1         operator+(QString const&, char) [2111]
+                0.00    0.00       1/3           QString::QString(QString const&) [2093]
+                0.00    0.00       1/1           QString::operator+=(QChar) [2106]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+ [161] ENHest_put_text        [21] df_gets               [114] parse_logical_AND_expression
+ [137] ENHsvg_FLUSH           [42] df_open               [115] parse_logical_OR_expression
+  [87] ENHsvg_OPEN            [88] df_parse_string_field [116] parse_multiplicative_expression
+ [143] ENHsvg_put_text         [9] df_readascii           [91] parse_primary_expression
+  [79] ENHsvg_writec           [8] df_readline            [51] parse_range
+  [26] Gcomplex              [193] df_set_key_title      [117] parse_relational_expression
+ [233] GetAnnotateString     [194] df_set_plot_mode       [92] parse_unary_expression
+ [144] Ginteger               [10] df_tokenise           [225] perm_at
+ [130] Gstring               [248] df_unset_datafile_binary [226] place_arrows
+ [234] MousePosToGraphPosReal [180] display_ipc_commands  [46] place_grid
+  [71] SVG_AddSpaceOrNewline [249] do_key_bounds         [272] place_histogram_titles
+ [118] SVG_GroupClose        [250] do_key_layout         [227] place_labels
+  [78] SVG_GroupFilledClose   [57] do_key_sample         [210] place_objects
+ [131] SVG_GroupOpen           [3] do_line               [228] place_parallel_axes
+ [121] SVG_MoveForced         [19] do_plot                [56] plot_border
+  [83] SVG_PathClose         [219] do_pointsize            [4] plot_command
+ [122] SVG_PathOpen           [12] do_string_and_free     [20] plot_lines
+  [77] SVG_Pen_RealID         [58] draw_clip_line        [273] plot_mode
+ [164] SVG_SetFont           [251] draw_key               [43] plot_option_using
+ [133] SVG_dashtype          [252] draw_titles             [5] plotrequest
+ [235] SVG_graphics          [171] edge_intersect        [274] pm3d_reset
+ [187] SVG_hypertext         [158] empty_iteration        [65] pop
+ [236] SVG_init              [172] enhanced_recursion     [23] pop_or_convert_from_string
+ [138] SVG_justify_text       [72] equals                [275] prepare_call
+ [132] SVG_layer             [162] estimate_strlen        [66] push
+ [134] SVG_linetype            [6] eval_plots            [276] push_terminal
+ [135] SVG_linewidth          [16] evaluate_at           [277] qt_options
+ [237] SVG_local_reset       [253] event_reset           [229] quantize_normal_tics
+ [123] SVG_move               [17] execute_at             [70] real
+ [238] SVG_options           [165] expand_1level_macros   [32] real_expression
+ [199] SVG_path              [254] expand_df_column      [278] recalc_statusline
+ [145] SVG_put_text          [255] extend_input_line     [279] reset_colorbox
+ [239] SVG_reset             [256] extend_token_table     [62] reset_command
+ [126] SVG_set_color          [22] f_div                 [280] reset_hidden3doptions
+ [169] SVG_set_font           [24] f_dollars             [281] reset_key
+ [240] SVG_text              [195] f_push                [148] reset_logscale
+ [200] SVG_text_angle         [69] f_pushc               [282] reset_palette
+  [27] SVG_vector             [55] fill_gpval_axis        [68] reset_stack
+ [241] UpdateStatusline       [61] fill_gpval_float      [230] round_outward
+ [242] UpdateStatuslineWithMouseSetting [163] fill_gpval_integer [142] safe_strncpy
+ [243] X11_args               [85] fill_gpval_string     [283] save_writeback_all_axes
+ [2096] _GLOBAL__sub_I__Z18qt_encodingToCodec15set_encoding_id [257] find_maxl_keys [167] scanner
+ [2097] __static_initialization_and_destruction_0(int, int) [139] forever_iteration [284] set_cbminmax
+ [2092] qt_noop()             [30] fpe                    [13] set_colorsequence
+ [2098] ensureOptionsCreated() [258] free_arrowstyle      [34] set_command
+ [2099] QByteArray::data()    [93] free_at                [54] set_gpval_axis_sth_double
+ [2100] QByteArray::detach() [220] free_histlist          [38] set_linestyle
+ [2101] QByteArray::~QByteArray() [128] free_marklist     [59] set_output
+ [2090] QBasicAtomicInt::ref() [41] gen_tics             [285] set_plot_with_palette
+ [2088] QBasicAtomicInt::deref() [7] get_data            [286] set_term
+ [2102] QChar::unicode()     [129] get_num               [287] set_terminal
+ [2103] QColor::QColor(int, int, int, int) [196] get_style [204] setup_tics
+ [2104] QPoint::QPoint()     [259] get_terminals_names   [288] show_version
+ [2105] QString::QString(char const*) [173] get_udv_by_name [231] sp_free
+ [2093] QString::QString(QString const&) [260] get_user_env [289] splot_map_deactivate
+ [2094] QString::QString()    [75] gp_alloc               [15] store2d_point
+ [2089] QString::~QString()  [261] gp_atexit             [168] string_expand_macros
+ [2106] QString::operator+=(QChar) [262] gp_exit_cleanup  [44] string_or_express
+ [2091] QString::operator+=(QString const&) [183] gp_expand_tilde [119] temp_at
+ [2107] QtOption::QtOption()  [82] gp_realloc            [136] term_apply_lp_properties
+ [2095] QBasicAtomicInt::operator!=(int) const [74] gp_strdup [290] term_close_output
+ [2108] operator+(char const*, QString const&) [81] gpfree_string [291] term_end_plot
+ [2109] operator+(QString const&, char const*) [141] gprintf [292] term_initialise
+ [2110] operator+(QString const&, QString const&) [90] ignore_enhanced [232] term_reset
+ [2111] operator+(QString const&, char) [263] init_color [293] term_set_output
+  [94] accept_AND_expression  [63] init_constants        [294] term_start_plot
+  [95] accept_additive_expression [264] init_fit          [40] try_to_get_string
+  [96] accept_bitshift_expression [265] init_histogram   [295] unset_angles
+  [97] accept_equality_expression [266] init_memory      [296] unset_arrowstyles
+  [98] accept_exclusive_OR_expression [11] init_session  [149] unset_axislabel
+  [99] accept_inclusive_OR_expression [267] init_terminal [125] unset_axislabel_or_title
+ [100] accept_logical_AND_expression [197] initialize_use_spec [297] unset_boxplot
+ [101] accept_logical_OR_expression [33] int_expression  [298] unset_boxwidth
+ [102] accept_multiplicative_expression [268] interrupt_setup [299] unset_cntrlabel
+ [103] accept_relational_expression [206] invalidate_palette [300] unset_cntrparam
+  [89] add_action            [146] is_definition         [301] unset_contour
+ [181] add_udv               [207] is_plot_with_colorbox [302] unset_dgrid3d
+  [76] add_udv_by_name       [208] is_plot_with_palette  [303] unset_dummy
+ [244] adjust_offsets        [104] isanumber             [304] unset_fillstyle
+  [73] almost_equals          [80] isletter              [305] unset_fit
+ [127] apply_pm3dcolor       [140] isstring              [306] unset_grid
+ [211] axis_checked_extend_empty_range [177] label_width [307] unset_histogram
+ [201] axis_draw_2d_zeroaxis [178] lf_pop                [308] unset_isosamples
+ [212] axis_log_value_checked [179] lf_push              [309] unset_mapping
+ [120] axis_name              [14] load_file             [205] unset_margin
+  [45] axis_output_tics      [175] load_linetype         [150] unset_minitics
+ [202] axis_position_zeroaxis [52] load_one_range        [310] unset_missing
+ [213] axis_revert_and_unlog_range [53] load_range       [311] unset_offsets
+ [214] axis_revert_range     [209] load_rcfile           [312] unset_origin
+ [203] axis_set_graphical_range [184] loadpath_fopen     [313] unset_parametric
+ [215] axis_unlog_interval   [269] loadpath_handler      [314] unset_pointintervalbox
+  [49] boundary              [270] locale_handler        [315] unset_pointsize
+ [245] builtin_cancel_zoom   [176] lookup_ftable         [316] unset_polar
+ [216] change_term           [159] lookup_table          [151] unset_range
+ [156] check_for_iteration    [35] lp_parse              [317] unset_samples
+ [174] check_for_mouse_events [185] m_capture            [318] unset_size
+  [25] check_for_variable_color [221] m_quote_capture    [319] unset_style_circle
+  [18] check_missing         [222] make_tics             [320] unset_style_ellipse
+  [67] check_stack           [166] map_position_r        [321] unset_style_rectangle
+ [157] cleanup_iteration      [29] map_x                 [322] unset_textbox_style
+ [246] clear_binary_records   [28] map_y                 [152] unset_tics
+ [188] clear_df_column_headers [223] newpath             [323] unset_ticslevel
+ [189] clip_line             [160] next_iteration        [153] unset_timedata
+ [170] clip_point            [224] not_a_number          [324] unset_timefmt
+ [217] closepath             [147] on_page               [325] unset_timestamp
+   [2] command               [105] parse_AND_expression  [326] unset_view
+  [31] const_express         [106] parse_additive_expression [327] unset_zero
+  [39] const_string_express  [107] parse_assignment_expression [154] unset_zeroaxis
+ [124] convert               [108] parse_bitshift_expression [50] update_gpval_variables
+ [218] copy_or_invent_formatstring [36] parse_color_name [328] update_plot_bounds
+ [182] copy_str               [37] parse_colorspec       [329] update_ruler
+ [190] cp_alloc              [109] parse_conditional_expression [186] widest_tic_callback
+  [84] cp_extend             [271] parse_driver          [155] write_multiline
+ [247] cp_free               [110] parse_equality_expression [48] xtick2d_callback
+ [191] default_arrow_style    [86] parse_esc             [330] xy_format
+  [60] define                [111] parse_exclusive_OR_expression [47] ytick2d_callback
+ [198] del_udv_by_name       [112] parse_expression       [64] <cycle 1>
+ [192] df_close              [113] parse_inclusive_OR_expression
