@@ -1,3 +1,0 @@
-set term svg
-set output "test.svg"
-a="an4"; plot [350000:450000] a u 5 w l, a u 3 w l, a u 7 w l, a u 2 w l, a u ($8/25) w l, a u ($9/40) w l
