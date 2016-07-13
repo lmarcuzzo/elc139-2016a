@@ -37,7 +37,7 @@ No caso apresentado, os comandos estão definidos em um arquivo chamado **plot.p
 
 Utilizando o programa **gprof**, é possível ver de que maneira o programa faz a chamada das funções.
 
-!(prof.png)
+![](prof.png)
 
 A função `get_data()` contida em src/plot2d.c (estamos desconsiderando chamadas de plot em 3D) é chamada 6 vezes, uma para cada linha a ser plotada.
 
